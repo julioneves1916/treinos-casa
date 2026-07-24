@@ -1,0 +1,1047 @@
+{
+  "version": "2026-04-20",
+  "focos": [
+    "Híbrido",
+    "Inferiores",
+    "Superiores (Empurre)",
+    "Superiores (Tração)"
+  ],
+  "workouts": [
+    {
+      "id": 1,
+      "foco": "Superiores (Empurre)",
+      "estrutura": "Explosão e Estabilidade",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "Push Press",
+          "sets_raw": "1x6, 2x5, 2x4",
+          "sets": [
+            "1x6",
+            "2x5",
+            "2x4"
+          ]
+        },
+        {
+          "name": "Supino Halteres",
+          "sets_raw": "4x10",
+          "sets": [
+            "4x10"
+          ]
+        },
+        {
+          "name": "Tríceps Testa + Flexão",
+          "sets_raw": "3x12",
+          "sets": [
+            "3x12"
+          ]
+        },
+        {
+          "name": "Elevação Lateral",
+          "sets_raw": "4x12",
+          "sets": [
+            "4x12"
+          ]
+        },
+        {
+          "name": "Tríceps Corda",
+          "sets_raw": "3x15",
+          "sets": [
+            "3x15"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "AMRAP 10': 5 Cleans, 7 Jerks, 12 Cal Bike",
+        "type": "amrap",
+        "duration_sec": 600,
+        "rounds": null,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 2,
+      "foco": "Superiores (Empurre)",
+      "estrutura": "Potência Vertical",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "Power Jerk",
+          "sets_raw": "5x3",
+          "sets": [
+            "5x3"
+          ]
+        },
+        {
+          "name": "Shoulder Press Barra",
+          "sets_raw": "4x8",
+          "sets": [
+            "4x8"
+          ]
+        },
+        {
+          "name": "Paralelas com Peso",
+          "sets_raw": "4xMax",
+          "sets": [
+            "4xMax"
+          ]
+        },
+        {
+          "name": "Desenvolvimento Arnold",
+          "sets_raw": "3x10",
+          "sets": [
+            "3x10"
+          ]
+        },
+        {
+          "name": "Flexão Diamante",
+          "sets_raw": "3xMax",
+          "sets": [
+            "3xMax"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "5 Rounds: 15 DB Push Press, 10 Burpees",
+        "type": "rounds_fortime",
+        "duration_sec": null,
+        "rounds": 5,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 3,
+      "foco": "Superiores (Tração)",
+      "estrutura": "Tração Dinâmica",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "Hang Clean",
+          "sets_raw": "2x5, 2x4, 2x3",
+          "sets": [
+            "2x5",
+            "2x4",
+            "2x3"
+          ]
+        },
+        {
+          "name": "Remada Curvada",
+          "sets_raw": "2x8, 3x6",
+          "sets": [
+            "2x8",
+            "3x6"
+          ]
+        },
+        {
+          "name": "Barra Fixa com Peso",
+          "sets_raw": "4x6",
+          "sets": [
+            "4x6"
+          ]
+        },
+        {
+          "name": "Remada Unilateral Prancha",
+          "sets_raw": "4x8.8",
+          "sets": [
+            "4x8.8"
+          ]
+        },
+        {
+          "name": "Rosca Martelo",
+          "sets_raw": "3x12",
+          "sets": [
+            "3x12"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "6 Rounds (10\" ON / 30\" OFF): KBS Russo Pesado",
+        "type": "interval",
+        "duration_sec": null,
+        "rounds": 6,
+        "interval_on": 10,
+        "interval_off": 30
+      }
+    },
+    {
+      "id": 4,
+      "foco": "Superiores (Tração)",
+      "estrutura": "Puxada Vertical",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "High Pull",
+          "sets_raw": "1x6, 2x5, 2x4",
+          "sets": [
+            "1x6",
+            "2x5",
+            "2x4"
+          ]
+        },
+        {
+          "name": "Barra Fixa Peso",
+          "sets_raw": "4x6",
+          "sets": [
+            "4x6"
+          ]
+        },
+        {
+          "name": "Remada Baixa",
+          "sets_raw": "4x10",
+          "sets": [
+            "4x10"
+          ]
+        },
+        {
+          "name": "Crucifixo Inverso",
+          "sets_raw": "4x15",
+          "sets": [
+            "4x15"
+          ]
+        },
+        {
+          "name": "Rosca Direta",
+          "sets_raw": "3x10",
+          "sets": [
+            "3x10"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "AMRAP 12': 200m Corrida, 15 Abdominais, 10 Remadas DB",
+        "type": "amrap",
+        "duration_sec": 720,
+        "rounds": null,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 5,
+      "foco": "Inferiores",
+      "estrutura": "Agachamento",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "Hang Snatch",
+          "sets_raw": "2x6, 2x5, 1x4",
+          "sets": [
+            "2x6",
+            "2x5",
+            "1x4"
+          ]
+        },
+        {
+          "name": "Front Squat + Salto Caixa",
+          "sets_raw": "2x8.6, 2x6.6",
+          "sets": [
+            "2x8.6",
+            "2x6.6"
+          ]
+        },
+        {
+          "name": "Leg Press 45",
+          "sets_raw": "3x12",
+          "sets": [
+            "3x12"
+          ]
+        },
+        {
+          "name": "Cadeira Extensora",
+          "sets_raw": "3x15",
+          "sets": [
+            "3x15"
+          ]
+        },
+        {
+          "name": "Panturrilha",
+          "sets_raw": "4x15",
+          "sets": [
+            "4x15"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "5 Rounds: 10 Cal Bike, 6 Cleans (80%), 10 Cal Bike",
+        "type": "rounds_fortime",
+        "duration_sec": null,
+        "rounds": 5,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 6,
+      "foco": "Inferiores",
+      "estrutura": "Cadeira Posterior",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "Clean Pull",
+          "sets_raw": "5x4",
+          "sets": [
+            "5x4"
+          ]
+        },
+        {
+          "name": "Levantamento Terra",
+          "sets_raw": "6x5",
+          "sets": [
+            "6x5"
+          ]
+        },
+        {
+          "name": "Hip Thrust Isometria",
+          "sets_raw": "4x20\"",
+          "sets": [
+            "4x20\""
+          ]
+        },
+        {
+          "name": "Stiff Halteres",
+          "sets_raw": "4x12",
+          "sets": [
+            "4x12"
+          ]
+        },
+        {
+          "name": "Mesa Flexora",
+          "sets_raw": "3x12",
+          "sets": [
+            "3x12"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "EMOM 10': Min 1: 15 KBS Russo, Min 2: 12 Box Jumps",
+        "type": "emom",
+        "duration_sec": 600,
+        "rounds": null,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 7,
+      "foco": "Híbrido",
+      "estrutura": "Performance",
+      "exercises": [
+        {
+          "name": "Hang Clean",
+          "sets_raw": "2x5, 2x4, 2x3",
+          "sets": [
+            "2x5",
+            "2x4",
+            "2x3"
+          ]
+        },
+        {
+          "name": "Floor Press DB Unilateral",
+          "sets_raw": "4x10.10",
+          "sets": [
+            "4x10.10"
+          ]
+        },
+        {
+          "name": "Barra Fixa Peso",
+          "sets_raw": "4x6",
+          "sets": [
+            "4x6"
+          ]
+        },
+        {
+          "name": "Goblet Squat + Elevação Lateral",
+          "sets_raw": "3x12",
+          "sets": [
+            "3x12"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "AMRAP 10': 5 Cleans, 7 Jerks, 12 Cal Bike",
+        "type": "amrap",
+        "duration_sec": 600,
+        "rounds": null,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 8,
+      "foco": "Híbrido",
+      "estrutura": "Volume Empurre",
+      "exercises": [
+        {
+          "name": "High Pull",
+          "sets_raw": "1x6, 2x5, 2x4",
+          "sets": [
+            "1x6",
+            "2x5",
+            "2x4"
+          ]
+        },
+        {
+          "name": "Shoulder Press Barra",
+          "sets_raw": "4x8",
+          "sets": [
+            "4x8"
+          ]
+        },
+        {
+          "name": "Paralelas",
+          "sets_raw": "4xMax",
+          "sets": [
+            "4xMax"
+          ]
+        },
+        {
+          "name": "Passada",
+          "sets_raw": "3x20 passos",
+          "sets": [
+            "3x20 passos"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "6 Rounds (10\" ON / 30\" OFF): Burpee Tuck Jump, KBS Pesado",
+        "type": "interval",
+        "duration_sec": null,
+        "rounds": 6,
+        "interval_on": 10,
+        "interval_off": 30
+      }
+    },
+    {
+      "id": 9,
+      "foco": "Híbrido",
+      "estrutura": "Unilateral",
+      "exercises": [
+        {
+          "name": "Hang Snatch",
+          "sets_raw": "2x6, 2x5, 1x4",
+          "sets": [
+            "2x6",
+            "2x5",
+            "1x4"
+          ]
+        },
+        {
+          "name": "Terra",
+          "sets_raw": "6x5",
+          "sets": [
+            "6x5"
+          ]
+        },
+        {
+          "name": "Remada Unilateral Prancha",
+          "sets_raw": "4x8.8",
+          "sets": [
+            "4x8.8"
+          ]
+        },
+        {
+          "name": "Step Up",
+          "sets_raw": "3x10",
+          "sets": [
+            "3x10"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "1km Corrida + 30 Clean & Jerks leves",
+        "type": "fortime",
+        "duration_sec": null,
+        "rounds": null,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 10,
+      "foco": "Híbrido",
+      "estrutura": "Finalizador",
+      "exercises": [
+        {
+          "name": "Muscle Clean",
+          "sets_raw": "4x6",
+          "sets": [
+            "4x6"
+          ]
+        },
+        {
+          "name": "Front Squat",
+          "sets_raw": "4x8",
+          "sets": [
+            "4x8"
+          ]
+        },
+        {
+          "name": "Supino Reto Barra",
+          "sets_raw": "4x8",
+          "sets": [
+            "4x8"
+          ]
+        },
+        {
+          "name": "Core",
+          "sets_raw": "Prancha + Twist",
+          "sets": [
+            "Prancha + Twist"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "Chipper: 40 Cal Bike, 40 KBS, 40 Sit-ups, 40 Burpees",
+        "type": "fortime",
+        "duration_sec": null,
+        "rounds": null,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 11,
+      "foco": "Superiores (Empurre)",
+      "estrutura": "Ombro e Peito",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "Power Jerk",
+          "sets_raw": "1x6, 2x5, 2x4",
+          "sets": [
+            "1x6",
+            "2x5",
+            "2x4"
+          ]
+        },
+        {
+          "name": "Floor Press DB",
+          "sets_raw": "4x10.10",
+          "sets": [
+            "4x10.10"
+          ]
+        },
+        {
+          "name": "Supino Inc. Halteres",
+          "sets_raw": "3x12",
+          "sets": [
+            "3x12"
+          ]
+        },
+        {
+          "name": "Elevação Lateral",
+          "sets_raw": "4x12",
+          "sets": [
+            "4x12"
+          ]
+        },
+        {
+          "name": "Tríceps Corda",
+          "sets_raw": "3x15",
+          "sets": [
+            "3x15"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "AMRAP 10': 5 Cleans, 7 Jerks, 12 Cal Bike",
+        "type": "amrap",
+        "duration_sec": 600,
+        "rounds": null,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 12,
+      "foco": "Superiores (Empurre)",
+      "estrutura": "Estabilidade Vertical",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "Push Press",
+          "sets_raw": "5x4",
+          "sets": [
+            "5x4"
+          ]
+        },
+        {
+          "name": "Shoulder Press Barra",
+          "sets_raw": "4x8",
+          "sets": [
+            "4x8"
+          ]
+        },
+        {
+          "name": "Paralelas Peso",
+          "sets_raw": "4xMax",
+          "sets": [
+            "4xMax"
+          ]
+        },
+        {
+          "name": "Desenv. Arnold",
+          "sets_raw": "3x10",
+          "sets": [
+            "3x10"
+          ]
+        },
+        {
+          "name": "Flexão Diamante",
+          "sets_raw": "3xMax",
+          "sets": [
+            "3xMax"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "6 Rounds (10\" ON / 30\" OFF): High Pull, Burpee Tuck Jump",
+        "type": "interval",
+        "duration_sec": null,
+        "rounds": 6,
+        "interval_on": 10,
+        "interval_off": 30
+      }
+    },
+    {
+      "id": 13,
+      "foco": "Superiores (Tração)",
+      "estrutura": "Tração e Bíceps",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "Hang Clean",
+          "sets_raw": "2x5, 2x4, 2x3",
+          "sets": [
+            "2x5",
+            "2x4",
+            "2x3"
+          ]
+        },
+        {
+          "name": "Remada Curvada",
+          "sets_raw": "2x8, 3x6",
+          "sets": [
+            "2x8",
+            "3x6"
+          ]
+        },
+        {
+          "name": "Barra Fixa Peso",
+          "sets_raw": "4x6",
+          "sets": [
+            "4x6"
+          ]
+        },
+        {
+          "name": "Remada Unilateral Prancha",
+          "sets_raw": "4x8.8",
+          "sets": [
+            "4x8.8"
+          ]
+        },
+        {
+          "name": "Rosca Martelo",
+          "sets_raw": "3x12",
+          "sets": [
+            "3x12"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "6 Rounds (10\" ON / 30\" OFF): KBS Russo Pesado",
+        "type": "interval",
+        "duration_sec": null,
+        "rounds": 6,
+        "interval_on": 10,
+        "interval_off": 30
+      }
+    },
+    {
+      "id": 14,
+      "foco": "Superiores (Tração)",
+      "estrutura": "Puxada e Posterior",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "High Pull",
+          "sets_raw": "1x6, 2x5, 2x4",
+          "sets": [
+            "1x6",
+            "2x5",
+            "2x4"
+          ]
+        },
+        {
+          "name": "Remada Cavalinho",
+          "sets_raw": "4x8",
+          "sets": [
+            "4x8"
+          ]
+        },
+        {
+          "name": "Pulldown Polia",
+          "sets_raw": "4x12",
+          "sets": [
+            "4x12"
+          ]
+        },
+        {
+          "name": "Crucifixo Inverso",
+          "sets_raw": "4x15",
+          "sets": [
+            "4x15"
+          ]
+        },
+        {
+          "name": "Rosca Direta",
+          "sets_raw": "3x10",
+          "sets": [
+            "3x10"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "AMRAP 12': 200m Corrida, 15 Abdominais, 10 Remadas DB",
+        "type": "amrap",
+        "duration_sec": 720,
+        "rounds": null,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 15,
+      "foco": "Inferiores",
+      "estrutura": "Arranco",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "Hang Snatch",
+          "sets_raw": "2x6, 2x5, 1x4",
+          "sets": [
+            "2x6",
+            "2x5",
+            "1x4"
+          ]
+        },
+        {
+          "name": "Front Squat + Salto",
+          "sets_raw": "2x8.6, 2x6.6",
+          "sets": [
+            "2x8.6",
+            "2x6.6"
+          ]
+        },
+        {
+          "name": "Leg Press 45",
+          "sets_raw": "3x12",
+          "sets": [
+            "3x12"
+          ]
+        },
+        {
+          "name": "Extensora",
+          "sets_raw": "3x15",
+          "sets": [
+            "3x15"
+          ]
+        },
+        {
+          "name": "Panturrilha",
+          "sets_raw": "4x15",
+          "sets": [
+            "4x15"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "5 Rounds: 10 Cal Bike, 6 Cleans (80%), 10 Cal Bike",
+        "type": "rounds_fortime",
+        "duration_sec": null,
+        "rounds": 5,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 16,
+      "foco": "Inferiores",
+      "estrutura": "Posterior e Glúteo",
+      "exercises": [
+        {
+          "name": "Mobilidade",
+          "sets_raw": "",
+          "sets": []
+        },
+        {
+          "name": "Clean Pull",
+          "sets_raw": "5x3",
+          "sets": [
+            "5x3"
+          ]
+        },
+        {
+          "name": "Terra",
+          "sets_raw": "6x5",
+          "sets": [
+            "6x5"
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "sets_raw": "4x20\"",
+          "sets": [
+            "4x20\""
+          ]
+        },
+        {
+          "name": "Stiff Barra",
+          "sets_raw": "3x10",
+          "sets": [
+            "3x10"
+          ]
+        },
+        {
+          "name": "Mesa Flexora",
+          "sets_raw": "3x12",
+          "sets": [
+            "3x12"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "6 Rounds (10\" ON / 30\" OFF): KBS Russo, Burpee Tuck Jump",
+        "type": "interval",
+        "duration_sec": null,
+        "rounds": 6,
+        "interval_on": 10,
+        "interval_off": 30
+      }
+    },
+    {
+      "id": 17,
+      "foco": "Híbrido",
+      "estrutura": "Equilíbrio Força",
+      "exercises": [
+        {
+          "name": "Hang Clean",
+          "sets_raw": "2x5, 2x4, 2x3",
+          "sets": [
+            "2x5",
+            "2x4",
+            "2x3"
+          ]
+        },
+        {
+          "name": "Supino Reto Barra",
+          "sets_raw": "4x8",
+          "sets": [
+            "4x8"
+          ]
+        },
+        {
+          "name": "Remada Unilateral",
+          "sets_raw": "4x10.10",
+          "sets": [
+            "4x10.10"
+          ]
+        },
+        {
+          "name": "Elevação Lateral",
+          "sets_raw": "4x12",
+          "sets": [
+            "4x12"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "AMRAP 10': 5 Cleans, 7 Jerks, 12 Cal Bike",
+        "type": "amrap",
+        "duration_sec": 600,
+        "rounds": null,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 18,
+      "foco": "Híbrido",
+      "estrutura": "Explosão e Core",
+      "exercises": [
+        {
+          "name": "High Pull",
+          "sets_raw": "1x6, 2x5, 2x4",
+          "sets": [
+            "1x6",
+            "2x5",
+            "2x4"
+          ]
+        },
+        {
+          "name": "Shoulder Press Barra",
+          "sets_raw": "4x8",
+          "sets": [
+            "4x8"
+          ]
+        },
+        {
+          "name": "Goblet Squat",
+          "sets_raw": "4x12",
+          "sets": [
+            "4x12"
+          ]
+        },
+        {
+          "name": "Prancha + Twist",
+          "sets_raw": "4 séries",
+          "sets": [
+            "4 séries"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "5 Rounds: 10 Cal Bike, 10 Burpees, 10 KBS",
+        "type": "rounds_fortime",
+        "duration_sec": null,
+        "rounds": 5,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 19,
+      "foco": "Híbrido",
+      "estrutura": "Unilateral",
+      "exercises": [
+        {
+          "name": "Hang Snatch",
+          "sets_raw": "2x6, 2x5, 1x4",
+          "sets": [
+            "2x6",
+            "2x5",
+            "1x4"
+          ]
+        },
+        {
+          "name": "Afundo Halteres",
+          "sets_raw": "3x10",
+          "sets": [
+            "3x10"
+          ]
+        },
+        {
+          "name": "Floor Press DB",
+          "sets_raw": "4x10.10",
+          "sets": [
+            "4x10.10"
+          ]
+        },
+        {
+          "name": "Barra Fixa",
+          "sets_raw": "4xMax",
+          "sets": [
+            "4xMax"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "Death by Burpees",
+        "type": "fortime",
+        "duration_sec": null,
+        "rounds": null,
+        "interval_on": null,
+        "interval_off": null
+      }
+    },
+    {
+      "id": 20,
+      "foco": "Híbrido",
+      "estrutura": "Flagship Final",
+      "exercises": [
+        {
+          "name": "Muscle Clean",
+          "sets_raw": "4x6",
+          "sets": [
+            "4x6"
+          ]
+        },
+        {
+          "name": "Terra",
+          "sets_raw": "6x5",
+          "sets": [
+            "6x5"
+          ]
+        },
+        {
+          "name": "Paralelas Peso",
+          "sets_raw": "4xMax",
+          "sets": [
+            "4xMax"
+          ]
+        },
+        {
+          "name": "Elevação Lateral + Rosca",
+          "sets_raw": "3x12",
+          "sets": [
+            "3x12"
+          ]
+        }
+      ],
+      "metabolico": {
+        "raw": "6 Rounds (10\" ON / 30\" OFF): High Pull, KBS, Burpees",
+        "type": "interval",
+        "duration_sec": null,
+        "rounds": 6,
+        "interval_on": 10,
+        "interval_off": 30
+      }
+    }
+  ]
+}

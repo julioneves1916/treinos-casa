@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Julio Treinos" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Julio Neves - Treinos</title>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <div class="titles">
+        <h1>Julio Neves</h1>
+        <p class="subtitle" id="version-label">Treinos</p>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-view="list" role="tab">Treinos</button>
+      <button class="tab" data-view="history" role="tab">Histórico</button>
+    </nav>
+  </header>
+
+  <main id="app">
+    <!-- View: List -->
+    <section id="view-list" class="view active">
+      <div class="filters">
+        <label class="filter-label" for="foco-filter">Grupamento</label>
+        <div class="chip-row" id="foco-chips" role="radiogroup" aria-label="Filtro por grupamento"></div>
+        <input id="search-input" class="search-input" type="search"
+               placeholder="Buscar por número, exercício, foco…" aria-label="Buscar treinos"/>
+      </div>
+      <ul id="workout-list" class="workout-list" aria-label="Lista de treinos"></ul>
+    </section>
+
+    <!-- View: Detail -->
+    <section id="view-detail" class="view">
+      <button class="back-btn" id="back-from-detail">← Voltar</button>
+      <header class="detail-header">
+        <p class="eyebrow" id="detail-foco"></p>
+        <h2 id="detail-title"></h2>
+        <p class="detail-estrutura" id="detail-estrutura"></p>
+      </header>
+
+      <h3 class="section-heading">Exercícios</h3>
+      <ul id="exercise-list" class="exercise-list"></ul>
+
+      <h3 class="section-heading">Metabólico</h3>
+      <div id="metab-card" class="metab-card"></div>
+
+      <div class="action-row">
+        <button id="start-timer-btn" class="primary-btn">Iniciar timer</button>
+        <button id="finish-btn" class="secondary-btn">Concluir treino</button>
+      </div>
+    </section>
+
+    <!-- View: Timer -->
+    <section id="view-timer" class="view">
+      <button class="back-btn" id="back-from-timer">← Voltar</button>
+      <p class="eyebrow" id="timer-eyebrow"></p>
+      <h2 id="timer-title">Timer</h2>
+      <div class="timer-display">
+        <span id="timer-clock">00:00</span>
+        <p id="timer-phase" class="timer-phase"></p>
+        <p id="timer-round" class="timer-round"></p>
+      </div>
+      <div class="timer-controls">
+        <button id="timer-start" class="primary-btn">Start</button>
+        <button id="timer-pause" class="secondary-btn">Pausa</button>
+        <button id="timer-reset" class="secondary-btn">Reset</button>
+      </div>
+      <div id="timer-raw" class="metab-raw"></div>
+    </section>
+
+    <!-- View: History -->
+    <section id="view-history" class="view">
+      <h2>Histórico</h2>
+      <p class="muted" id="history-empty">Nenhum treino registrado ainda.</p>
+      <ul id="history-list" class="history-list"></ul>
+      <button id="clear-history" class="ghost-btn">Limpar histórico</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>

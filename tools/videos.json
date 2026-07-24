@@ -1,0 +1,2865 @@
+{
+  "Push Press": {
+    "search": "push press",
+    "source": "official",
+    "chosen": {
+      "id": "Ol-AJCNwgL4",
+      "title": "Push Press",
+      "channel": "CrossFit",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "Ol-AJCNwgL4",
+        "title": "Push Press",
+        "channel": "CrossFit",
+        "seconds": 14
+      },
+      {
+        "id": "MDE7fgut2Zs",
+        "title": "CrossFit - Shoulder Press/Push Press/Push Jerk tri-panel",
+        "channel": "CrossFit",
+        "seconds": 20
+      }
+    ]
+  },
+  "Push Press Halteres": {
+    "search": "dumbbell push press",
+    "source": "official",
+    "chosen": {
+      "id": "Ol-AJCNwgL4",
+      "title": "Push Press",
+      "channel": "CrossFit",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "Ol-AJCNwgL4",
+        "title": "Push Press",
+        "channel": "CrossFit",
+        "seconds": 14
+      },
+      {
+        "id": "MDE7fgut2Zs",
+        "title": "CrossFit - Shoulder Press/Push Press/Push Jerk tri-panel",
+        "channel": "CrossFit",
+        "seconds": 20
+      }
+    ]
+  },
+  "Power Jerk": {
+    "search": "push jerk",
+    "source": "official",
+    "chosen": {
+      "id": "MDE7fgut2Zs",
+      "title": "CrossFit - Shoulder Press/Push Press/Push Jerk tri-panel",
+      "channel": "CrossFit",
+      "seconds": 20
+    },
+    "candidates": [
+      {
+        "id": "MDE7fgut2Zs",
+        "title": "CrossFit - Shoulder Press/Push Press/Push Jerk tri-panel",
+        "channel": "CrossFit",
+        "seconds": 20
+      }
+    ]
+  },
+  "Shoulder Press Barra": {
+    "search": "shoulder press barbell strict",
+    "source": "official",
+    "chosen": {
+      "id": "MDE7fgut2Zs",
+      "title": "CrossFit - Shoulder Press/Push Press/Push Jerk tri-panel",
+      "channel": "CrossFit",
+      "seconds": 20
+    },
+    "candidates": [
+      {
+        "id": "MDE7fgut2Zs",
+        "title": "CrossFit - Shoulder Press/Push Press/Push Jerk tri-panel",
+        "channel": "CrossFit",
+        "seconds": 20
+      }
+    ]
+  },
+  "Desenvolvimento Halteres": {
+    "search": "seated dumbbell shoulder press",
+    "source": "official",
+    "chosen": {
+      "id": "MDE7fgut2Zs",
+      "title": "CrossFit - Shoulder Press/Push Press/Push Jerk tri-panel",
+      "channel": "CrossFit",
+      "seconds": 20
+    },
+    "candidates": [
+      {
+        "id": "MDE7fgut2Zs",
+        "title": "CrossFit - Shoulder Press/Push Press/Push Jerk tri-panel",
+        "channel": "CrossFit",
+        "seconds": 20
+      }
+    ]
+  },
+  "Desenvolvimento Arnold": {
+    "search": "arnold press",
+    "source": "official",
+    "chosen": {
+      "id": "MDE7fgut2Zs",
+      "title": "CrossFit - Shoulder Press/Push Press/Push Jerk tri-panel",
+      "channel": "CrossFit",
+      "seconds": 20
+    },
+    "candidates": [
+      {
+        "id": "MDE7fgut2Zs",
+        "title": "CrossFit - Shoulder Press/Push Press/Push Jerk tri-panel",
+        "channel": "CrossFit",
+        "seconds": 20
+      }
+    ]
+  },
+  "Supino Reto Barra": {
+    "search": "barbell bench press",
+    "source": "global",
+    "chosen": {
+      "id": "ejI1Nlsul9k",
+      "title": "Barbell Bench Press - OPEX Exercise Library",
+      "channel": "OPEX Fitness",
+      "seconds": 9
+    },
+    "candidates": [
+      {
+        "id": "ejI1Nlsul9k",
+        "title": "Barbell Bench Press - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 9
+      },
+      {
+        "id": "CjHIKDQ4RQo",
+        "title": "How To Do A Barbell Bench Press Correctly",
+        "channel": "PureGym",
+        "seconds": 16
+      }
+    ]
+  },
+  "Supino Halteres": {
+    "search": "dumbbell bench press",
+    "source": "global",
+    "chosen": {
+      "id": "YQ2s_Y7g5Qk",
+      "title": "Flat Dumbbell Bench Press",
+      "channel": "Renaissance Periodization",
+      "seconds": 11
+    },
+    "candidates": [
+      {
+        "id": "YQ2s_Y7g5Qk",
+        "title": "Flat Dumbbell Bench Press",
+        "channel": "Renaissance Periodization",
+        "seconds": 11
+      },
+      {
+        "id": "ZaDlbm8E8Tg",
+        "title": "Dumbbell Bench Press - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 12
+      }
+    ]
+  },
+  "Supino Inclinado Halteres": {
+    "search": "incline dumbbell bench press",
+    "source": "global",
+    "chosen": {
+      "id": "jMQA3XtJSgo",
+      "title": "Incline Dumbbell Bench Press - OPEX Exercise Library",
+      "channel": "OPEX Fitness",
+      "seconds": 13
+    },
+    "candidates": [
+      {
+        "id": "jMQA3XtJSgo",
+        "title": "Incline Dumbbell Bench Press - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 13
+      },
+      {
+        "id": "YQ2s_Y7g5Qk",
+        "title": "Flat Dumbbell Bench Press",
+        "channel": "Renaissance Periodization",
+        "seconds": 11
+      },
+      {
+        "id": "5CECBjd7HLQ",
+        "title": "Incline Dumbbell Press",
+        "channel": "Renaissance Periodization",
+        "seconds": 12
+      }
+    ]
+  },
+  "Floor Press DB": {
+    "search": "dumbbell floor press",
+    "source": "global",
+    "chosen": {
+      "id": "9vcKpv45aeE",
+      "title": "Dumbbell Floor Press",
+      "channel": "Marcus Filly",
+      "seconds": 10
+    },
+    "candidates": [
+      {
+        "id": "9vcKpv45aeE",
+        "title": "Dumbbell Floor Press",
+        "channel": "Marcus Filly",
+        "seconds": 10
+      },
+      {
+        "id": "T0Y3OBF1bNI",
+        "title": "How To Do A Dumbbell Floor Press",
+        "channel": "PureGym",
+        "seconds": 12
+      },
+      {
+        "id": "fc7sLXRrQaU",
+        "title": "Dumbbell Floor Press",
+        "channel": "Testosterone Nation",
+        "seconds": 16
+      },
+      {
+        "id": "0S0pPgQXWNk",
+        "title": "Single Arm Dumbbell Floor Press",
+        "channel": "Functional Bodybuilding",
+        "seconds": 17
+      },
+      {
+        "id": "CDIo5MQwktc",
+        "title": "How To Do: Dumbbell Floor Press - Alternating | Chest Workout Exercise",
+        "channel": "Fitway - Workout Trainer",
+        "seconds": 27
+      }
+    ]
+  },
+  "Floor Press DB Unilateral": {
+    "search": "single arm dumbbell floor press",
+    "source": "global",
+    "chosen": {
+      "id": "10dVgGKx6ik",
+      "title": "Single Arm Dumbbell Floor Press",
+      "channel": "Marcus Filly",
+      "seconds": 12
+    },
+    "candidates": [
+      {
+        "id": "10dVgGKx6ik",
+        "title": "Single Arm Dumbbell Floor Press",
+        "channel": "Marcus Filly",
+        "seconds": 12
+      },
+      {
+        "id": "NvhuzTAUZXM",
+        "title": "Hollow Body Single Arm Dumbbell Floor Press",
+        "channel": "Functional Bodybuilding",
+        "seconds": 16
+      },
+      {
+        "id": "0S0pPgQXWNk",
+        "title": "Single Arm Dumbbell Floor Press",
+        "channel": "Functional Bodybuilding",
+        "seconds": 17
+      },
+      {
+        "id": "YgAJxNnwXow",
+        "title": "Single Arm DB Floor Press",
+        "channel": "Theory of Motion Exercise Library",
+        "seconds": 21
+      },
+      {
+        "id": "Xu7QaebaQRI",
+        "title": "Single Arm Floor Press",
+        "channel": "Phil Daru",
+        "seconds": 24
+      }
+    ]
+  },
+  "Paralelas": {
+    "search": "dips",
+    "source": "official",
+    "chosen": {
+      "id": "K4EgI4_lwF4",
+      "title": "At-Home: Chair Dips",
+      "channel": "CrossFit",
+      "seconds": 22
+    },
+    "candidates": [
+      {
+        "id": "K4EgI4_lwF4",
+        "title": "At-Home: Chair Dips",
+        "channel": "CrossFit",
+        "seconds": 22
+      }
+    ]
+  },
+  "Paralelas com Peso": {
+    "search": "weighted dips",
+    "source": "global",
+    "chosen": {
+      "id": "UZ_kEpmACZ4",
+      "title": "Movement Demo - Weighted Dips",
+      "channel": "Rogue Fitness",
+      "seconds": 20
+    },
+    "candidates": [
+      {
+        "id": "UZ_kEpmACZ4",
+        "title": "Movement Demo - Weighted Dips",
+        "channel": "Rogue Fitness",
+        "seconds": 20
+      }
+    ]
+  },
+  "Flexão": {
+    "search": "push up",
+    "source": "official",
+    "chosen": {
+      "id": "gMGOb5fSq6M",
+      "title": "Elevated Push-Up",
+      "channel": "CrossFit",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "gMGOb5fSq6M",
+        "title": "Elevated Push-Up",
+        "channel": "CrossFit",
+        "seconds": 16
+      },
+      {
+        "id": "Ahf4t9ky3d8",
+        "title": "Push-Up From the Knees",
+        "channel": "CrossFit",
+        "seconds": 17
+      },
+      {
+        "id": "YOR9bYStd4A",
+        "title": "Push-Up",
+        "channel": "CrossFit",
+        "seconds": 20
+      },
+      {
+        "id": "SVR2Ropw6Iw",
+        "title": "Couch Push-Up",
+        "channel": "CrossFit",
+        "seconds": 24
+      },
+      {
+        "id": "X5oos9BVh_4",
+        "title": "Push-ups: Fireteam",
+        "channel": "CrossFit",
+        "seconds": 12
+      }
+    ]
+  },
+  "Flexão Diamante": {
+    "search": "diamond push up",
+    "source": "official",
+    "chosen": {
+      "id": "SVR2Ropw6Iw",
+      "title": "Couch Push-Up",
+      "channel": "CrossFit",
+      "seconds": 24
+    },
+    "candidates": [
+      {
+        "id": "SVR2Ropw6Iw",
+        "title": "Couch Push-Up",
+        "channel": "CrossFit",
+        "seconds": 24
+      }
+    ]
+  },
+  "Flexão Inclinada": {
+    "search": "incline push up",
+    "source": "official",
+    "chosen": {
+      "id": "gMGOb5fSq6M",
+      "title": "Elevated Push-Up",
+      "channel": "CrossFit",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "gMGOb5fSq6M",
+        "title": "Elevated Push-Up",
+        "channel": "CrossFit",
+        "seconds": 16
+      },
+      {
+        "id": "YOR9bYStd4A",
+        "title": "Push-Up",
+        "channel": "CrossFit",
+        "seconds": 20
+      }
+    ]
+  },
+  "Pike Push-up": {
+    "search": "pike push up",
+    "source": "official",
+    "chosen": {
+      "id": "gMGOb5fSq6M",
+      "title": "Elevated Push-Up",
+      "channel": "CrossFit",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "gMGOb5fSq6M",
+        "title": "Elevated Push-Up",
+        "channel": "CrossFit",
+        "seconds": 16
+      },
+      {
+        "id": "Ahf4t9ky3d8",
+        "title": "Push-Up From the Knees",
+        "channel": "CrossFit",
+        "seconds": 17
+      },
+      {
+        "id": "YOR9bYStd4A",
+        "title": "Push-Up",
+        "channel": "CrossFit",
+        "seconds": 20
+      },
+      {
+        "id": "SVR2Ropw6Iw",
+        "title": "Couch Push-Up",
+        "channel": "CrossFit",
+        "seconds": 24
+      }
+    ]
+  },
+  "Tríceps Testa": {
+    "search": "skull crusher lying triceps extension",
+    "source": "global",
+    "chosen": {
+      "id": "tj81tVq3wLo",
+      "title": "How to Do Lying Triceps Extension (Skull Crusher) | Proper Form Tutorial",
+      "channel": "FIT.nl",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "tj81tVq3wLo",
+        "title": "How to Do Lying Triceps Extension (Skull Crusher) | Proper Form Tutorial",
+        "channel": "FIT.nl",
+        "seconds": 16
+      },
+      {
+        "id": "1BDGIcMTSXc",
+        "title": "Dumbbell Triceps Skull Crusher",
+        "channel": "Onnit Academy",
+        "seconds": 12
+      }
+    ]
+  },
+  "Tríceps Testa + Flexão": {
+    "search": "skull crusher",
+    "source": "global",
+    "chosen": {
+      "id": "1BDGIcMTSXc",
+      "title": "Dumbbell Triceps Skull Crusher",
+      "channel": "Onnit Academy",
+      "seconds": 12
+    },
+    "candidates": [
+      {
+        "id": "1BDGIcMTSXc",
+        "title": "Dumbbell Triceps Skull Crusher",
+        "channel": "Onnit Academy",
+        "seconds": 12
+      },
+      {
+        "id": "y_6C8s9KpPg",
+        "title": "Massive Triceps Exercise! The EZ Bar Skull Crusher (Demo Video)",
+        "channel": "THECoachDannyB",
+        "seconds": 23
+      }
+    ]
+  },
+  "Tríceps Corda": {
+    "search": "triceps rope pushdown",
+    "source": "global",
+    "chosen": {
+      "id": "-C8b9vOH_co",
+      "title": "Tricep Rope Pushdown - Female",
+      "channel": "Michael Z",
+      "seconds": 9
+    },
+    "candidates": [
+      {
+        "id": "-C8b9vOH_co",
+        "title": "Tricep Rope Pushdown - Female",
+        "channel": "Michael Z",
+        "seconds": 9
+      }
+    ]
+  },
+  "Tríceps Francês Halter": {
+    "search": "overhead dumbbell triceps extension",
+    "source": "global",
+    "chosen": {
+      "id": "a9oPnZReIRE",
+      "title": "Dumbbell Overhead Tricep Extension - OPEX Exercise Library",
+      "channel": "OPEX Fitness",
+      "seconds": 12
+    },
+    "candidates": [
+      {
+        "id": "a9oPnZReIRE",
+        "title": "Dumbbell Overhead Tricep Extension - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 12
+      }
+    ]
+  },
+  "Tríceps Banco": {
+    "search": "bench dips",
+    "source": "official",
+    "chosen": {
+      "id": "K4EgI4_lwF4",
+      "title": "At-Home: Chair Dips",
+      "channel": "CrossFit",
+      "seconds": 22
+    },
+    "candidates": [
+      {
+        "id": "K4EgI4_lwF4",
+        "title": "At-Home: Chair Dips",
+        "channel": "CrossFit",
+        "seconds": 22
+      }
+    ]
+  },
+  "Elevação Lateral": {
+    "search": "dumbbell lateral raise",
+    "source": "global",
+    "chosen": {
+      "id": "XPPfnSEATJA",
+      "title": "How to do a Dumbbell Lateral Raise",
+      "channel": "National Academy of Sports Medicine (NASM)",
+      "seconds": 19
+    },
+    "candidates": [
+      {
+        "id": "XPPfnSEATJA",
+        "title": "How to do a Dumbbell Lateral Raise",
+        "channel": "National Academy of Sports Medicine (NASM)",
+        "seconds": 19
+      }
+    ]
+  },
+  "Elevação Frontal": {
+    "search": "dumbbell front raise",
+    "source": "global",
+    "chosen": {
+      "id": "8gUnEDhVR9I",
+      "title": "Seated Dumbbell Front Raise",
+      "channel": "OPEX Fitness",
+      "seconds": 15
+    },
+    "candidates": [
+      {
+        "id": "8gUnEDhVR9I",
+        "title": "Seated Dumbbell Front Raise",
+        "channel": "OPEX Fitness",
+        "seconds": 15
+      },
+      {
+        "id": "zkP0MsTcIVU",
+        "title": "How To Do A Dumbbell Front Raise",
+        "channel": "PureGym",
+        "seconds": 16
+      },
+      {
+        "id": "xagEKj2yDc8",
+        "title": "Dumbbell Shoulder Front Raise",
+        "channel": "Functional Bodybuilding",
+        "seconds": 17
+      },
+      {
+        "id": "c4EhnuYZQI8",
+        "title": "Dumbbell Alternating Front Raise",
+        "channel": "FITTR",
+        "seconds": 18
+      }
+    ]
+  },
+  "Elevação Lateral + Rosca": {
+    "search": "dumbbell lateral raise",
+    "source": "global",
+    "chosen": {
+      "id": "XPPfnSEATJA",
+      "title": "How to do a Dumbbell Lateral Raise",
+      "channel": "National Academy of Sports Medicine (NASM)",
+      "seconds": 19
+    },
+    "candidates": [
+      {
+        "id": "XPPfnSEATJA",
+        "title": "How to do a Dumbbell Lateral Raise",
+        "channel": "National Academy of Sports Medicine (NASM)",
+        "seconds": 19
+      }
+    ]
+  },
+  "Barra Fixa": {
+    "search": "pull up",
+    "source": "official",
+    "chosen": {
+      "id": "5Sik8s95Rzs",
+      "title": "Pull-up Bar Innovation",
+      "channel": "CrossFit",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "5Sik8s95Rzs",
+        "title": "Pull-up Bar Innovation",
+        "channel": "CrossFit",
+        "seconds": 14
+      },
+      {
+        "id": "u5Af6gQa554",
+        "title": "Pull-up Modification",
+        "channel": "CrossFit",
+        "seconds": 22
+      },
+      {
+        "id": "aAggnpPyR6E",
+        "title": "The Pull-Up",
+        "channel": "CrossFit",
+        "seconds": 29
+      },
+      {
+        "id": "hHdD5Ksdnmk",
+        "title": "The Pull-up (L-Sit)",
+        "channel": "CrossFit",
+        "seconds": 29
+      },
+      {
+        "id": "7R_FRI2xLPQ",
+        "title": "Le pull-up",
+        "channel": "CrossFit",
+        "seconds": 30
+      }
+    ]
+  },
+  "Barra Fixa com Peso": {
+    "search": "weighted pull up",
+    "source": "official",
+    "chosen": {
+      "id": "5Sik8s95Rzs",
+      "title": "Pull-up Bar Innovation",
+      "channel": "CrossFit",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "5Sik8s95Rzs",
+        "title": "Pull-up Bar Innovation",
+        "channel": "CrossFit",
+        "seconds": 14
+      },
+      {
+        "id": "u5Af6gQa554",
+        "title": "Pull-up Modification",
+        "channel": "CrossFit",
+        "seconds": 22
+      },
+      {
+        "id": "aAggnpPyR6E",
+        "title": "The Pull-Up",
+        "channel": "CrossFit",
+        "seconds": 29
+      },
+      {
+        "id": "hHdD5Ksdnmk",
+        "title": "The Pull-up (L-Sit)",
+        "channel": "CrossFit",
+        "seconds": 29
+      },
+      {
+        "id": "7R_FRI2xLPQ",
+        "title": "Le pull-up",
+        "channel": "CrossFit",
+        "seconds": 30
+      }
+    ]
+  },
+  "Pulldown Polia": {
+    "search": "lat pulldown",
+    "source": "global",
+    "chosen": {
+      "id": "cCH-kpNydyQ",
+      "title": "Fixed Lat Pulldown Machine Demonstration",
+      "channel": "Simon Wallgren",
+      "seconds": 8
+    },
+    "candidates": [
+      {
+        "id": "cCH-kpNydyQ",
+        "title": "Fixed Lat Pulldown Machine Demonstration",
+        "channel": "Simon Wallgren",
+        "seconds": 8
+      },
+      {
+        "id": "j1fxEsUZE5U",
+        "title": "Narrow Grip Lat Pulldown — Quick Technique Demo",
+        "channel": "Fitness By Physio",
+        "seconds": 11
+      },
+      {
+        "id": "JGeRYIZdojU",
+        "title": "How To Do A Lat Pulldown",
+        "channel": "PureGym",
+        "seconds": 14
+      },
+      {
+        "id": "79YSOtCzICM",
+        "title": "Lat Pulldown Demo by Matt Bible",
+        "channel": "CASS Fitness",
+        "seconds": 16
+      }
+    ]
+  },
+  "Remada Curvada": {
+    "search": "bent over barbell row",
+    "source": "global",
+    "chosen": {
+      "id": "9Gf-Ourup_k",
+      "title": "Bent Over Barbell Row - OPEX Exercise Library",
+      "channel": "OPEX Fitness",
+      "seconds": 11
+    },
+    "candidates": [
+      {
+        "id": "9Gf-Ourup_k",
+        "title": "Bent Over Barbell Row - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 11
+      },
+      {
+        "id": "bm0_q9bR_HA",
+        "title": "How to do a Barbell Bent Over Row Pronated",
+        "channel": "National Academy of Sports Medicine (NASM)",
+        "seconds": 19
+      },
+      {
+        "id": "vnGSs0qnD8Q",
+        "title": "Bent Over Barbell Row",
+        "channel": "Women's Strength Nation by Holly Perkins",
+        "seconds": 25
+      }
+    ]
+  },
+  "Remada Unilateral": {
+    "search": "single arm dumbbell row",
+    "source": "official",
+    "chosen": {
+      "id": "wNoXB3-QMbY",
+      "title": "Single Dumbbell Row",
+      "channel": "CrossFit",
+      "seconds": 19
+    },
+    "candidates": [
+      {
+        "id": "wNoXB3-QMbY",
+        "title": "Single Dumbbell Row",
+        "channel": "CrossFit",
+        "seconds": 19
+      },
+      {
+        "id": "u63l9f0dAHU",
+        "title": "The Single-Arm Row",
+        "channel": "CrossFit",
+        "seconds": 23
+      },
+      {
+        "id": "t7VDDNKBNx8",
+        "title": "Double Dumbbell Row",
+        "channel": "CrossFit",
+        "seconds": 13
+      },
+      {
+        "id": "BtbSjlX9eZI",
+        "title": "At-Home Workout: Single-Arm Deadlift Shrug and Snatch",
+        "channel": "CrossFit",
+        "seconds": 29
+      }
+    ]
+  },
+  "Remada Unilateral Prancha": {
+    "search": "renegade row",
+    "source": "global",
+    "chosen": {
+      "id": "gi1EwrDbgJo",
+      "title": "Renegade Row - OPEX Exercise Library",
+      "channel": "OPEX Fitness",
+      "seconds": 9
+    },
+    "candidates": [
+      {
+        "id": "gi1EwrDbgJo",
+        "title": "Renegade Row - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 9
+      },
+      {
+        "id": "Q28cLuweLv4",
+        "title": "How To Do A Renegade Row",
+        "channel": "PureGym",
+        "seconds": 13
+      },
+      {
+        "id": "G1AcX8Y_byg",
+        "title": "Renegade Row",
+        "channel": "Functional Bodybuilding",
+        "seconds": 15
+      },
+      {
+        "id": "LccyTxiUrhg",
+        "title": "Renegade Row",
+        "channel": "ExperienceLifeMag",
+        "seconds": 18
+      },
+      {
+        "id": "Ws_Uw1fybx0",
+        "title": "Renegade Row with Push Up",
+        "channel": "The Active Life",
+        "seconds": 18
+      }
+    ]
+  },
+  "Remada Baixa": {
+    "search": "seated cable row",
+    "source": "global",
+    "chosen": {
+      "id": "lJoozxC0Rns",
+      "title": "How To Do A Seated Cable Row",
+      "channel": "PureGym",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "lJoozxC0Rns",
+        "title": "How To Do A Seated Cable Row",
+        "channel": "PureGym",
+        "seconds": 16
+      },
+      {
+        "id": "UCXxvVItLoM",
+        "title": "Seated Cable Row",
+        "channel": "Renaissance Periodization",
+        "seconds": 18
+      },
+      {
+        "id": "NYok5zjbDcw",
+        "title": "the correct way to do a low cable row for max gains",
+        "channel": "mountaindog1",
+        "seconds": 30
+      }
+    ]
+  },
+  "Remada Cavalinho": {
+    "search": "t bar row demo",
+    "source": "global",
+    "chosen": {
+      "id": "AMyF-aXCX3U",
+      "title": "T-bar Row: Lats / Back Exercise Demo How-to",
+      "channel": "FitSW Fitness Software",
+      "seconds": 10
+    },
+    "candidates": [
+      {
+        "id": "AMyF-aXCX3U",
+        "title": "T-bar Row: Lats / Back Exercise Demo How-to",
+        "channel": "FitSW Fitness Software",
+        "seconds": 10
+      },
+      {
+        "id": "hN7aHPE9auo",
+        "title": "T-Bar Row: Demonstration",
+        "channel": "StrengthLog",
+        "seconds": 14
+      },
+      {
+        "id": "BVSTYt02SuY",
+        "title": "Technogym Pure Strength Plate Loaded | T-Row Bar",
+        "channel": "Woodside Health Club",
+        "seconds": 19
+      },
+      {
+        "id": "zL7JWm_beA8",
+        "title": "Exercise Tutorial - Chest Supported T Bar Row",
+        "channel": "josh cowan",
+        "seconds": 30
+      }
+    ]
+  },
+  "Remada Invertida": {
+    "search": "inverted row",
+    "source": "global",
+    "chosen": {
+      "id": "EIFEKZe4Wm8",
+      "title": "Table Inverted Row",
+      "channel": "Alex Bunt",
+      "seconds": 10
+    },
+    "candidates": [
+      {
+        "id": "EIFEKZe4Wm8",
+        "title": "Table Inverted Row",
+        "channel": "Alex Bunt",
+        "seconds": 10
+      },
+      {
+        "id": "KOaCM1HMwU0",
+        "title": "Inverted Row",
+        "channel": "Renaissance Periodization",
+        "seconds": 13
+      }
+    ]
+  },
+  "Remada com Elástico": {
+    "search": "resistance band row",
+    "source": "global",
+    "chosen": {
+      "id": "whSXi-EXbqI",
+      "title": "Seated Row - 15-Minute Resistance Band Workout",
+      "channel": "3v",
+      "seconds": 25
+    },
+    "candidates": [
+      {
+        "id": "whSXi-EXbqI",
+        "title": "Seated Row - 15-Minute Resistance Band Workout",
+        "channel": "3v",
+        "seconds": 25
+      }
+    ]
+  },
+  "High Pull": {
+    "search": "dumbbell high pull",
+    "source": "official",
+    "chosen": {
+      "id": "19JKYKIzf9E",
+      "title": "Finish Position in the Sumo Deadlift High Pull",
+      "channel": "CrossFit",
+      "seconds": 30
+    },
+    "candidates": [
+      {
+        "id": "19JKYKIzf9E",
+        "title": "Finish Position in the Sumo Deadlift High Pull",
+        "channel": "CrossFit",
+        "seconds": 30
+      }
+    ]
+  },
+  "Face Pull": {
+    "search": "face pull",
+    "source": "global",
+    "chosen": {
+      "id": "w-RctWbFNGc",
+      "title": "How To Do Face Pull | Exercise Demo",
+      "channel": "OriGym",
+      "seconds": 13
+    },
+    "candidates": [
+      {
+        "id": "w-RctWbFNGc",
+        "title": "How To Do Face Pull | Exercise Demo",
+        "channel": "OriGym",
+        "seconds": 13
+      },
+      {
+        "id": "4UhV4cCkugM",
+        "title": "How To Do Seated Cable Face Pull | Exercise Demo",
+        "channel": "OriGym",
+        "seconds": 14
+      },
+      {
+        "id": "toHfpKStJ48",
+        "title": "Onnit Tutorials | Banded Face Pull Exercise",
+        "channel": "Onnit",
+        "seconds": 15
+      },
+      {
+        "id": "GqqxcAaulcI",
+        "title": "Cable Face Pull / Rear Delt Exercise / Improve your Posture",
+        "channel": "Denvyr | Tall Girl Nutritionist",
+        "seconds": 18
+      },
+      {
+        "id": "916ARwwHI6I",
+        "title": "Rope Face Pull",
+        "channel": "E3 Rehab Exercise Library",
+        "seconds": 18
+      }
+    ]
+  },
+  "Crucifixo Inverso": {
+    "search": "reverse fly dumbbell",
+    "source": "global",
+    "chosen": {
+      "id": "zlfisQZSxU0",
+      "title": "Reverse Dumbbell Fly",
+      "channel": "Women's Strength Nation by Holly Perkins",
+      "seconds": 22
+    },
+    "candidates": [
+      {
+        "id": "zlfisQZSxU0",
+        "title": "Reverse Dumbbell Fly",
+        "channel": "Women's Strength Nation by Holly Perkins",
+        "seconds": 22
+      },
+      {
+        "id": "KlQf6K-1Bfc",
+        "title": "REVERSE FLY",
+        "channel": "Atomic Athlete",
+        "seconds": 22
+      },
+      {
+        "id": "bMD474hAjDE",
+        "title": "Reverse Fly With Dumbbells On An Incline Bench",
+        "channel": "Shane Niemeyer",
+        "seconds": 24
+      }
+    ]
+  },
+  "Rosca Direta": {
+    "search": "barbell curl",
+    "source": "global",
+    "chosen": {
+      "id": "N5x5M1x1Gd0",
+      "title": "How To Do A Barbell Bicep Curl",
+      "channel": "PureGym",
+      "seconds": 11
+    },
+    "candidates": [
+      {
+        "id": "N5x5M1x1Gd0",
+        "title": "How To Do A Barbell Bicep Curl",
+        "channel": "PureGym",
+        "seconds": 11
+      },
+      {
+        "id": "JnLFSFurrqQ",
+        "title": "Barbell Curl Normal Grip",
+        "channel": "Renaissance Periodization",
+        "seconds": 14
+      }
+    ]
+  },
+  "Rosca Martelo": {
+    "search": "dumbbell hammer curl demo",
+    "source": "manual",
+    "chosen": {
+      "id": "RIEMoYL_h1Y",
+      "title": "Dumbbell Hammer Curl - OPEX Exercise Library",
+      "channel": "OPEX Fitness",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "yUnp3ZIbuuY",
+        "title": "Dumbbell Hammer Curl | Exercise Demo | Coaching Software | QuickCoach",
+        "channel": "QuickCoach",
+        "seconds": 10
+      },
+      {
+        "id": "OCTS3avlWbo",
+        "title": "Dumbbell Hammer Curl: Demo",
+        "channel": "CFB Athletic Club",
+        "seconds": 16
+      },
+      {
+        "id": "x3mrD2Bv4QI",
+        "title": "How To Do Dumbbell Hammer Curl and Press | Exercise Demo",
+        "channel": "OriGym",
+        "seconds": 21
+      },
+      {
+        "id": "B8O6Ed_l6xw",
+        "title": "Dumbbell Hammer Curl | Exercise Demo",
+        "channel": "Red Dot Fitness",
+        "seconds": 26
+      },
+      {
+        "id": "RIEMoYL_h1Y",
+        "title": "Dumbbell Hammer Curl - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 14
+      }
+    ]
+  },
+  "Rosca Alternada": {
+    "search": "alternating dumbbell curl",
+    "source": "global",
+    "chosen": {
+      "id": "o2Tma5Cek48",
+      "title": "Alternating Dumbbell Curl - OPEX Exercise Library",
+      "channel": "OPEX Fitness",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "o2Tma5Cek48",
+        "title": "Alternating Dumbbell Curl - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 14
+      },
+      {
+        "id": "g_FIfe2_GUo",
+        "title": "Seated Alternating Dumbbell Curl",
+        "channel": "Functional Bodybuilding",
+        "seconds": 20
+      },
+      {
+        "id": "WGTCVgCqLqM",
+        "title": "Alternating Hammer Curl",
+        "channel": "Lioncorp Investments",
+        "seconds": 16
+      },
+      {
+        "id": "WYezBGuUsdw",
+        "title": "Alternating Dumbbell Curls",
+        "channel": "Functional Bodybuilding",
+        "seconds": 21
+      }
+    ]
+  },
+  "Hang Clean": {
+    "search": "hang power clean",
+    "source": "official",
+    "chosen": {
+      "id": "wj-J99uzGPE",
+      "title": "Hang Power Clean Demo",
+      "channel": "CrossFit",
+      "seconds": 20
+    },
+    "candidates": [
+      {
+        "id": "wj-J99uzGPE",
+        "title": "Hang Power Clean Demo",
+        "channel": "CrossFit",
+        "seconds": 20
+      }
+    ]
+  },
+  "Muscle Clean": {
+    "search": "muscle clean",
+    "source": "official",
+    "chosen": {
+      "id": "5P0_tHl6Rao",
+      "title": "Spot the Flaw: Rapid Cycle Rate Clean #crossfit #crossfitcoach",
+      "channel": "CrossFit",
+      "seconds": 24
+    },
+    "candidates": [
+      {
+        "id": "5P0_tHl6Rao",
+        "title": "Spot the Flaw: Rapid Cycle Rate Clean #crossfit #crossfitcoach",
+        "channel": "CrossFit",
+        "seconds": 24
+      }
+    ]
+  },
+  "Clean Pull": {
+    "search": "clean pull",
+    "source": "official",
+    "chosen": {
+      "id": "fp4KO8uZsGQ",
+      "title": "Clean",
+      "channel": "CrossFit",
+      "seconds": 21
+    },
+    "candidates": [
+      {
+        "id": "fp4KO8uZsGQ",
+        "title": "Clean",
+        "channel": "CrossFit",
+        "seconds": 21
+      },
+      {
+        "id": "XC93V6_1JzY",
+        "title": "Clean Drops",
+        "channel": "CrossFit",
+        "seconds": 28
+      }
+    ]
+  },
+  "Hang Snatch": {
+    "search": "hang power snatch",
+    "source": "global",
+    "chosen": {
+      "id": "z1j2QMBJF6c",
+      "title": "Hang Power Snatch | CrossFit Invictus",
+      "channel": "CrossFit Invictus",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "z1j2QMBJF6c",
+        "title": "Hang Power Snatch | CrossFit Invictus",
+        "channel": "CrossFit Invictus",
+        "seconds": 16
+      },
+      {
+        "id": "hKyoSiyPWSA",
+        "title": "High Hang Power Snatch",
+        "channel": "Damien Hennigan",
+        "seconds": 17
+      },
+      {
+        "id": "oQ1TNH8k4mg",
+        "title": "Hang Power Snatch + Hang Snatch + OHS",
+        "channel": "Weightlifting 101",
+        "seconds": 23
+      },
+      {
+        "id": "Bo9dza4AD9Q",
+        "title": "Hang Snatch | CrossFit Invictus",
+        "channel": "CrossFit Invictus",
+        "seconds": 13
+      }
+    ]
+  },
+  "Clean & Jerk": {
+    "search": "power clean and jerk demo",
+    "source": "manual",
+    "chosen": {
+      "id": "R9G6a2_mT0c",
+      "title": "Rich Froning | Squat Clean And Jerk",
+      "channel": "Mayhem Athlete",
+      "seconds": 20
+    },
+    "candidates": [
+      {
+        "id": "wj-J99uzGPE",
+        "title": "Hang Power Clean Demo",
+        "channel": "CrossFit",
+        "seconds": 20
+      }
+    ]
+  },
+  "Snatch Halteres": {
+    "search": "dumbbell snatch",
+    "source": "official",
+    "chosen": {
+      "id": "NaAj8RZiEtY",
+      "title": "Dumbbell Snatch",
+      "channel": "CrossFit",
+      "seconds": 15
+    },
+    "candidates": [
+      {
+        "id": "NaAj8RZiEtY",
+        "title": "Dumbbell Snatch",
+        "channel": "CrossFit",
+        "seconds": 15
+      },
+      {
+        "id": "6Z6aU3GTHZk",
+        "title": "Dumbell Snatch Demo",
+        "channel": "CrossFit",
+        "seconds": 12
+      }
+    ]
+  },
+  "Clean Halteres": {
+    "search": "dumbbell power clean",
+    "source": "global",
+    "chosen": {
+      "id": "G8a_998VEE8",
+      "title": "Dumbbell Power Clean",
+      "channel": "OPEX Fitness",
+      "seconds": 15
+    },
+    "candidates": [
+      {
+        "id": "G8a_998VEE8",
+        "title": "Dumbbell Power Clean",
+        "channel": "OPEX Fitness",
+        "seconds": 15
+      },
+      {
+        "id": "3PnWQwabq4Y",
+        "title": "Dumbbell Power Clean",
+        "channel": "Functional Bodybuilding",
+        "seconds": 15
+      },
+      {
+        "id": "xEeIlKv55Aw",
+        "title": "Dumbbell Power Clean and Jerk",
+        "channel": "OPEX Fitness",
+        "seconds": 15
+      },
+      {
+        "id": "F6-7W1WaT4k",
+        "title": "Dumbbell Clean - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 14
+      },
+      {
+        "id": "uCeNCZFk34c",
+        "title": "P21E: Dumbbell Clean Demo",
+        "channel": "Pivot Cycles",
+        "seconds": 15
+      }
+    ]
+  },
+  "Thruster": {
+    "search": "thruster",
+    "source": "official",
+    "chosen": {
+      "id": "3SHYWUw-kzA",
+      "title": "Sit-to-Stand Thruster",
+      "channel": "CrossFit",
+      "seconds": 13
+    },
+    "candidates": [
+      {
+        "id": "3SHYWUw-kzA",
+        "title": "Sit-to-Stand Thruster",
+        "channel": "CrossFit",
+        "seconds": 13
+      },
+      {
+        "id": "sE4eGIr5TC8",
+        "title": "Can You Spot the Flaw in the Thruster? #crossfit #thruster #crossfitcoaching #crossfitcoach",
+        "channel": "CrossFit",
+        "seconds": 14
+      },
+      {
+        "id": "zYdl9pJtOB0",
+        "title": "Everyone's Favorite, The Thruster",
+        "channel": "CrossFit",
+        "seconds": 16
+      },
+      {
+        "id": "OAzbopyuwT0",
+        "title": "Backpack Thruster",
+        "channel": "CrossFit",
+        "seconds": 24
+      }
+    ]
+  },
+  "Thruster Halteres": {
+    "search": "dumbbell thruster",
+    "source": "official",
+    "chosen": {
+      "id": "t7VDDNKBNx8",
+      "title": "Double Dumbbell Row",
+      "channel": "CrossFit",
+      "seconds": 13
+    },
+    "candidates": [
+      {
+        "id": "t7VDDNKBNx8",
+        "title": "Double Dumbbell Row",
+        "channel": "CrossFit",
+        "seconds": 13
+      },
+      {
+        "id": "sE4eGIr5TC8",
+        "title": "Can You Spot the Flaw in the Thruster? #crossfit #thruster #crossfitcoaching #crossfitcoach",
+        "channel": "CrossFit",
+        "seconds": 14
+      }
+    ]
+  },
+  "Agachamento Livre": {
+    "search": "back squat",
+    "source": "global",
+    "chosen": {
+      "id": "-bJIpOq-LWk",
+      "title": "How to do a Barbell Back Squat",
+      "channel": "National Academy of Sports Medicine (NASM)",
+      "seconds": 12
+    },
+    "candidates": [
+      {
+        "id": "-bJIpOq-LWk",
+        "title": "How to do a Barbell Back Squat",
+        "channel": "National Academy of Sports Medicine (NASM)",
+        "seconds": 12
+      },
+      {
+        "id": "Rvy12jFLBFo",
+        "title": "Back Squat",
+        "channel": "Marcus Filly",
+        "seconds": 15
+      },
+      {
+        "id": "rrJIyZGlK8c",
+        "title": "How To Do A Barbell Back Squat",
+        "channel": "PureGym",
+        "seconds": 24
+      },
+      {
+        "id": "KB_r0K3Ce2E",
+        "title": "Barbell Back Squat | Exercise Demo",
+        "channel": "Red Dot Fitness",
+        "seconds": 25
+      }
+    ]
+  },
+  "Front Squat": {
+    "search": "front squat",
+    "source": "global",
+    "chosen": {
+      "id": "Q1Ypb8ZNzI4",
+      "title": "How To Do A Barbell front squat",
+      "channel": "PureGym",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "Q1Ypb8ZNzI4",
+        "title": "How To Do A Barbell front squat",
+        "channel": "PureGym",
+        "seconds": 14
+      },
+      {
+        "id": "Of-NEJT5Hlw",
+        "title": "Front Squat from the Floor",
+        "channel": "Turf Games",
+        "seconds": 27
+      }
+    ]
+  },
+  "Front Squat + Salto Caixa": {
+    "search": "front squat",
+    "source": "global",
+    "chosen": {
+      "id": "Q1Ypb8ZNzI4",
+      "title": "How To Do A Barbell front squat",
+      "channel": "PureGym",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "Q1Ypb8ZNzI4",
+        "title": "How To Do A Barbell front squat",
+        "channel": "PureGym",
+        "seconds": 14
+      },
+      {
+        "id": "Of-NEJT5Hlw",
+        "title": "Front Squat from the Floor",
+        "channel": "Turf Games",
+        "seconds": 27
+      }
+    ]
+  },
+  "Goblet Squat": {
+    "search": "goblet squat",
+    "source": "official",
+    "chosen": {
+      "id": "i8oGQ03wqZc",
+      "title": "Air Squat",
+      "channel": "CrossFit",
+      "seconds": 13
+    },
+    "candidates": [
+      {
+        "id": "i8oGQ03wqZc",
+        "title": "Air Squat",
+        "channel": "CrossFit",
+        "seconds": 13
+      }
+    ]
+  },
+  "Goblet Squat + Elevação Lateral": {
+    "search": "goblet squat",
+    "source": "official",
+    "chosen": {
+      "id": "i8oGQ03wqZc",
+      "title": "Air Squat",
+      "channel": "CrossFit",
+      "seconds": 13
+    },
+    "candidates": [
+      {
+        "id": "i8oGQ03wqZc",
+        "title": "Air Squat",
+        "channel": "CrossFit",
+        "seconds": 13
+      }
+    ]
+  },
+  "Agachamento Sumô Halter": {
+    "search": "dumbbell sumo squat",
+    "source": "global",
+    "chosen": {
+      "id": "vBA3vyOxJv0",
+      "title": "Dumbbell Sumo Squat",
+      "channel": "OPEX Fitness",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "vBA3vyOxJv0",
+        "title": "Dumbbell Sumo Squat",
+        "channel": "OPEX Fitness",
+        "seconds": 14
+      },
+      {
+        "id": "Gi6qyetXQNk",
+        "title": "Dual Dumbbell Sumo Squat",
+        "channel": "OPEX Fitness",
+        "seconds": 14
+      },
+      {
+        "id": "snq4DQw9YSI",
+        "title": "How to do a Dumbbell Sumo Squat",
+        "channel": "Denvyr | Tall Girl Nutritionist",
+        "seconds": 20
+      },
+      {
+        "id": "KecS-01uVK0",
+        "title": "How To : Dumbbell Sumo Squats",
+        "channel": "HOME WORKOUT STUDIO",
+        "seconds": 14
+      }
+    ]
+  },
+  "Levantamento Terra": {
+    "search": "deadlift",
+    "source": "official",
+    "chosen": {
+      "id": "KHp3yY6dSPs",
+      "title": "Elevated Deadlift",
+      "channel": "CrossFit",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "KHp3yY6dSPs",
+        "title": "Elevated Deadlift",
+        "channel": "CrossFit",
+        "seconds": 16
+      },
+      {
+        "id": "jSJs4bTO7BM",
+        "title": "Deadlift",
+        "channel": "CrossFit",
+        "seconds": 18
+      },
+      {
+        "id": "1tCu7uNraDk",
+        "title": "Spot the Flaw: Deadlift  #crossfit #crossfitcoach",
+        "channel": "CrossFit",
+        "seconds": 21
+      }
+    ]
+  },
+  "Stiff Barra": {
+    "search": "romanian deadlift",
+    "source": "official",
+    "chosen": {
+      "id": "KHp3yY6dSPs",
+      "title": "Elevated Deadlift",
+      "channel": "CrossFit",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "KHp3yY6dSPs",
+        "title": "Elevated Deadlift",
+        "channel": "CrossFit",
+        "seconds": 16
+      },
+      {
+        "id": "8OTXZn3xQkk",
+        "title": "The Deadlift",
+        "channel": "CrossFit",
+        "seconds": 16
+      },
+      {
+        "id": "jSJs4bTO7BM",
+        "title": "Deadlift",
+        "channel": "CrossFit",
+        "seconds": 18
+      },
+      {
+        "id": "yTaEmfiighs",
+        "title": "At Home: Household Deadlift",
+        "channel": "CrossFit",
+        "seconds": 27
+      }
+    ]
+  },
+  "Stiff Halteres": {
+    "search": "dumbbell romanian deadlift",
+    "source": "global",
+    "chosen": {
+      "id": "Cf3CaHui43A",
+      "title": "Dumbbell Romanian Deadlift",
+      "channel": "Glute Lab",
+      "seconds": 15
+    },
+    "candidates": [
+      {
+        "id": "Cf3CaHui43A",
+        "title": "Dumbbell Romanian Deadlift",
+        "channel": "Glute Lab",
+        "seconds": 15
+      },
+      {
+        "id": "xAL7lHwj30E",
+        "title": "Dumbbell Romanian Deadlift",
+        "channel": "Onnit Academy",
+        "seconds": 16
+      },
+      {
+        "id": "UsOjCcxSJaI",
+        "title": "Dumbbell Romanian Deadlift",
+        "channel": "Functional Bodybuilding",
+        "seconds": 16
+      }
+    ]
+  },
+  "Terra Unilateral Halter": {
+    "search": "dumbbell single leg rdl",
+    "source": "manual",
+    "chosen": {
+      "id": "7r2gUum_DoQ",
+      "title": "Landmine Single Leg Romanian Deadlift",
+      "channel": "OPEX Fitness",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "krGW0UMDuzM",
+        "title": "At-Home: Single Arm, Single Leg Plank",
+        "channel": "CrossFit",
+        "seconds": 25
+      }
+    ]
+  },
+  "Leg Press 45": {
+    "search": "leg press",
+    "source": "official",
+    "chosen": {
+      "id": "Ol-AJCNwgL4",
+      "title": "Push Press",
+      "channel": "CrossFit",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "Ol-AJCNwgL4",
+        "title": "Push Press",
+        "channel": "CrossFit",
+        "seconds": 14
+      },
+      {
+        "id": "OsOmps5Frxc",
+        "title": "At-Home: Jug Press Negatives",
+        "channel": "CrossFit",
+        "seconds": 26
+      }
+    ]
+  },
+  "Cadeira Extensora": {
+    "search": "leg extension machine",
+    "source": "global",
+    "chosen": {
+      "id": "4ZDm5EbiFI8",
+      "title": "How To Do A Leg Extension",
+      "channel": "PureGym",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "4ZDm5EbiFI8",
+        "title": "How To Do A Leg Extension",
+        "channel": "PureGym",
+        "seconds": 14
+      }
+    ]
+  },
+  "Mesa Flexora": {
+    "search": "lying leg curl",
+    "source": "global",
+    "chosen": {
+      "id": "n5WDXD_mpVY",
+      "title": "Lying Leg Curl",
+      "channel": "Renaissance Periodization",
+      "seconds": 13
+    },
+    "candidates": [
+      {
+        "id": "n5WDXD_mpVY",
+        "title": "Lying Leg Curl",
+        "channel": "Renaissance Periodization",
+        "seconds": 13
+      },
+      {
+        "id": "SbSNUXPRkc8",
+        "title": "How To Do A Lying Leg Curl (Prone Leg Curl)",
+        "channel": "PureGym",
+        "seconds": 16
+      },
+      {
+        "id": "Orxowest56U",
+        "title": "Seated Leg Curl",
+        "channel": "Renaissance Periodization",
+        "seconds": 11
+      },
+      {
+        "id": "SiwJ_T62l9c",
+        "title": "Hammer Strength Select Leg Curl",
+        "channel": "Hammer Strength",
+        "seconds": 30
+      }
+    ]
+  },
+  "Hip Thrust": {
+    "search": "barbell hip thrust",
+    "source": "global",
+    "chosen": {
+      "id": "huBInBlQJro",
+      "title": "Barbell Hip Thrust",
+      "channel": "FitSW Fitness Software",
+      "seconds": 8
+    },
+    "candidates": [
+      {
+        "id": "huBInBlQJro",
+        "title": "Barbell Hip Thrust",
+        "channel": "FitSW Fitness Software",
+        "seconds": 8
+      },
+      {
+        "id": "z-3gj04UJUs",
+        "title": "B Stance Barbell Hip Thrust - Exercise Demo",
+        "channel": "Aaron Schiavone",
+        "seconds": 13
+      },
+      {
+        "id": "5S8SApGU_Lk",
+        "title": "Barbell Hip Thrust",
+        "channel": "John Rusin",
+        "seconds": 16
+      },
+      {
+        "id": "aweBS7K71l8",
+        "title": "How To Do A Barbell Hip Thrust",
+        "channel": "PureGym",
+        "seconds": 17
+      },
+      {
+        "id": "Gz74laKkzGU",
+        "title": "Barbell Hip Thrust | Exercise Demo",
+        "channel": "Red Dot Fitness",
+        "seconds": 24
+      }
+    ]
+  },
+  "Hip Thrust Halteres": {
+    "search": "dumbbell hip thrust",
+    "source": "global",
+    "chosen": {
+      "id": "Q2PMzlxGRFU",
+      "title": "Dumbbell Hip Thrust Form Tips",
+      "channel": "O2 Fitness",
+      "seconds": 22
+    },
+    "candidates": [
+      {
+        "id": "Q2PMzlxGRFU",
+        "title": "Dumbbell Hip Thrust Form Tips",
+        "channel": "O2 Fitness",
+        "seconds": 22
+      }
+    ]
+  },
+  "Hip Thrust Isometria": {
+    "search": "hip thrust",
+    "source": "official",
+    "chosen": {
+      "id": "7X075Hrl5lE",
+      "title": "The GHD Hip Extension",
+      "channel": "CrossFit",
+      "seconds": 22
+    },
+    "candidates": [
+      {
+        "id": "7X075Hrl5lE",
+        "title": "The GHD Hip Extension",
+        "channel": "CrossFit",
+        "seconds": 22
+      }
+    ]
+  },
+  "Elevação Pélvica": {
+    "search": "glute bridge",
+    "source": "manual",
+    "chosen": {
+      "id": "3nQeWv5Tx1A",
+      "title": "How To Do Glute Bridge | Exercise Demo",
+      "channel": "OriGym",
+      "seconds": 12
+    },
+    "candidates": [
+      {
+        "id": "Zr2RLjIjCN0",
+        "title": "Bodyweight Knee-Banded Glute Bridge",
+        "channel": "Glute Lab",
+        "seconds": 11
+      },
+      {
+        "id": "3nQeWv5Tx1A",
+        "title": "How To Do Glute Bridge | Exercise Demo",
+        "channel": "OriGym",
+        "seconds": 12
+      },
+      {
+        "id": "msfdrPWJ-9o",
+        "title": "Glute Bridge March",
+        "channel": "Performance Course",
+        "seconds": 12
+      },
+      {
+        "id": "tqp5XQPpTxY",
+        "title": "How To Do A Glute Bridge",
+        "channel": "PureGym",
+        "seconds": 21
+      }
+    ]
+  },
+  "Elevação Pélvica Unilateral": {
+    "search": "single leg glute bridge",
+    "source": "global",
+    "chosen": {
+      "id": "hV--4whvfCM",
+      "title": "Bench Supported Single Leg Glute Bridge Offset DB DEMO",
+      "channel": "Brittany Rene",
+      "seconds": 10
+    },
+    "candidates": [
+      {
+        "id": "hV--4whvfCM",
+        "title": "Bench Supported Single Leg Glute Bridge Offset DB DEMO",
+        "channel": "Brittany Rene",
+        "seconds": 10
+      },
+      {
+        "id": "1u5ZDhtYC8s",
+        "title": "Single leg DB Glute Bridge",
+        "channel": "Functional Bodybuilding",
+        "seconds": 13
+      },
+      {
+        "id": "bRhumn5F7q4",
+        "title": "Single Leg Glute Bridge Demonstration",
+        "channel": "Academic Performance Fitness and Rehab",
+        "seconds": 16
+      },
+      {
+        "id": "B5lN4qOaCBQ",
+        "title": "Dumbbell Single Leg Glute Bridge | Demonstration \\\\ Mayhem Fitness",
+        "channel": "Mayhem Fitness",
+        "seconds": 17
+      },
+      {
+        "id": "sVfp4LN9niA",
+        "title": "How To  Do A Single Leg Glute Bridge",
+        "channel": "PureGym",
+        "seconds": 20
+      }
+    ]
+  },
+  "Passada": {
+    "search": "walking lunge",
+    "source": "global",
+    "chosen": {
+      "id": "tQNktxPkSeE",
+      "title": "Walking Lunge",
+      "channel": "Onnit Academy",
+      "seconds": 8
+    },
+    "candidates": [
+      {
+        "id": "tQNktxPkSeE",
+        "title": "Walking Lunge",
+        "channel": "Onnit Academy",
+        "seconds": 8
+      },
+      {
+        "id": "8fZxWTiIJWo",
+        "title": "Dumbbell Walking Lunge - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 13
+      },
+      {
+        "id": "R_4-f8xA9mk",
+        "title": "10 Walking Lunge Exercise",
+        "channel": "UKyOrtho",
+        "seconds": 30
+      },
+      {
+        "id": "I34ysEkPK7w",
+        "title": "Dumbbell Walking Lunge - How To",
+        "channel": "Bobby Maximus",
+        "seconds": 30
+      }
+    ]
+  },
+  "Afundo Halteres": {
+    "search": "dumbbell lunge",
+    "source": "official",
+    "chosen": {
+      "id": "UT6dR2Np960",
+      "title": "At-Home: Assisted Lunge",
+      "channel": "CrossFit",
+      "seconds": 29
+    },
+    "candidates": [
+      {
+        "id": "UT6dR2Np960",
+        "title": "At-Home: Assisted Lunge",
+        "channel": "CrossFit",
+        "seconds": 29
+      }
+    ]
+  },
+  "Agachamento Búlgaro": {
+    "search": "bulgarian split squat",
+    "source": "global",
+    "chosen": {
+      "id": "Fmjj7wFJWRE",
+      "title": "Bulgarian Split Squat with Dumbbells",
+      "channel": "The Active Life",
+      "seconds": 20
+    },
+    "candidates": [
+      {
+        "id": "Fmjj7wFJWRE",
+        "title": "Bulgarian Split Squat with Dumbbells",
+        "channel": "The Active Life",
+        "seconds": 20
+      }
+    ]
+  },
+  "Step Up": {
+    "search": "box step up",
+    "source": "global",
+    "chosen": {
+      "id": "PHGUzLhhsbQ",
+      "title": "Box Step up",
+      "channel": "The Active Life",
+      "seconds": 18
+    },
+    "candidates": [
+      {
+        "id": "PHGUzLhhsbQ",
+        "title": "Box Step up",
+        "channel": "The Active Life",
+        "seconds": 18
+      },
+      {
+        "id": "wfhXnLILqdk",
+        "title": "Step Up Exercise | Osteoarthritis Physiotherapy",
+        "channel": "Cornerstone Physiotherapy",
+        "seconds": 14
+      },
+      {
+        "id": "tQ5EhfnETls",
+        "title": "Step Ups (Low Box)",
+        "channel": "E3 Rehab Exercise Library",
+        "seconds": 15
+      },
+      {
+        "id": "37tVohr7LcE",
+        "title": "Dumbbell Box Step Ups",
+        "channel": "Marcus Filly",
+        "seconds": 15
+      },
+      {
+        "id": "9ZknEYboBOQ",
+        "title": "Dumbbell Step-up - How To",
+        "channel": "Bobby Maximus",
+        "seconds": 25
+      }
+    ]
+  },
+  "Panturrilha": {
+    "search": "standing calf raise",
+    "source": "global",
+    "chosen": {
+      "id": "g_E7_q1z2bo",
+      "title": "Hammer Strength Select Standing Calf Raise",
+      "channel": "Hammer Strength",
+      "seconds": 19
+    },
+    "candidates": [
+      {
+        "id": "g_E7_q1z2bo",
+        "title": "Hammer Strength Select Standing Calf Raise",
+        "channel": "Hammer Strength",
+        "seconds": 19
+      },
+      {
+        "id": "Km0QS46bTEA",
+        "title": "Standing calf raises",
+        "channel": "Balance In Motion",
+        "seconds": 12
+      }
+    ]
+  },
+  "Cadeira Isométrica": {
+    "search": "wall sit",
+    "source": "official",
+    "chosen": {
+      "id": "_Yeao3oe6bA",
+      "title": "The L-Sit At Home",
+      "channel": "CrossFit",
+      "seconds": 13
+    },
+    "candidates": [
+      {
+        "id": "_Yeao3oe6bA",
+        "title": "The L-Sit At Home",
+        "channel": "CrossFit",
+        "seconds": 13
+      },
+      {
+        "id": "Vk-BIB2Bbyg",
+        "title": "CrossFit - Log Sit Up",
+        "channel": "CrossFit",
+        "seconds": 26
+      },
+      {
+        "id": "_HbccxgnCg0",
+        "title": "The L-Sit",
+        "channel": "CrossFit",
+        "seconds": 27
+      },
+      {
+        "id": "2nUphk1ge9I",
+        "title": "At-Home Workout: Weighted Sit-To-Stands",
+        "channel": "CrossFit",
+        "seconds": 28
+      }
+    ]
+  },
+  "Abdução com Elástico": {
+    "search": "banded lateral walk",
+    "source": "global",
+    "chosen": {
+      "id": "N4tkpDMlqCQ",
+      "title": "Lateral Mini-Band Walk",
+      "channel": "ken whittier",
+      "seconds": 11
+    },
+    "candidates": [
+      {
+        "id": "N4tkpDMlqCQ",
+        "title": "Lateral Mini-Band Walk",
+        "channel": "ken whittier",
+        "seconds": 11
+      },
+      {
+        "id": "pzQ2M_iY0D8",
+        "title": "Banded Lateral Walks",
+        "channel": "OPEX Fitness",
+        "seconds": 13
+      }
+    ]
+  },
+  "Salto na Caixa": {
+    "search": "box jump",
+    "source": "official",
+    "chosen": {
+      "id": "52r_Ul5k03g",
+      "title": "The Box Jump",
+      "channel": "CrossFit",
+      "seconds": 28
+    },
+    "candidates": [
+      {
+        "id": "52r_Ul5k03g",
+        "title": "The Box Jump",
+        "channel": "CrossFit",
+        "seconds": 28
+      }
+    ]
+  },
+  "Prancha": {
+    "search": "plank",
+    "source": "official",
+    "chosen": {
+      "id": "sZxrs3C209k",
+      "title": "The Plank Hold",
+      "channel": "CrossFit",
+      "seconds": 18
+    },
+    "candidates": [
+      {
+        "id": "sZxrs3C209k",
+        "title": "The Plank Hold",
+        "channel": "CrossFit",
+        "seconds": 18
+      },
+      {
+        "id": "krGW0UMDuzM",
+        "title": "At-Home: Single Arm, Single Leg Plank",
+        "channel": "CrossFit",
+        "seconds": 25
+      }
+    ]
+  },
+  "Prancha + Twist": {
+    "search": "plank hip twist",
+    "source": "global",
+    "chosen": {
+      "id": "JYW5VAnIWbo",
+      "title": "Plank Hip Twist",
+      "channel": "easy2health",
+      "seconds": 6
+    },
+    "candidates": [
+      {
+        "id": "JYW5VAnIWbo",
+        "title": "Plank Hip Twist",
+        "channel": "easy2health",
+        "seconds": 6
+      },
+      {
+        "id": "nU0_9UZP-rU",
+        "title": "Plank Hip Twist Demonstration",
+        "channel": "Simon Wallgren",
+        "seconds": 7
+      },
+      {
+        "id": "sMd0C64bSmk",
+        "title": "Plank Hip Twist",
+        "channel": "Andrei Andrei Fitness",
+        "seconds": 25
+      },
+      {
+        "id": "JXmsnG2_TzY",
+        "title": "Plank Hip Twist",
+        "channel": "Paul Glezer",
+        "seconds": 27
+      },
+      {
+        "id": "udhJw_t5IvY",
+        "title": "How To Do A Plank Hip Twist",
+        "channel": "Danny Nichols Fitness",
+        "seconds": 30
+      }
+    ]
+  },
+  "Prancha Lateral": {
+    "search": "side plank",
+    "source": "official",
+    "chosen": {
+      "id": "sZxrs3C209k",
+      "title": "The Plank Hold",
+      "channel": "CrossFit",
+      "seconds": 18
+    },
+    "candidates": [
+      {
+        "id": "sZxrs3C209k",
+        "title": "The Plank Hold",
+        "channel": "CrossFit",
+        "seconds": 18
+      },
+      {
+        "id": "krGW0UMDuzM",
+        "title": "At-Home: Single Arm, Single Leg Plank",
+        "channel": "CrossFit",
+        "seconds": 25
+      }
+    ]
+  },
+  "Abdominal": {
+    "search": "sit up",
+    "source": "official",
+    "chosen": {
+      "id": "q4ap_8wpaF8",
+      "title": "Assisted Sit-Up",
+      "channel": "CrossFit",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "q4ap_8wpaF8",
+        "title": "Assisted Sit-Up",
+        "channel": "CrossFit",
+        "seconds": 16
+      },
+      {
+        "id": "8Ax9H9VPdm4",
+        "title": "Sit-up",
+        "channel": "CrossFit",
+        "seconds": 17
+      },
+      {
+        "id": "fNqmku65lLo",
+        "title": "Sit-Up, Reduced Range of Motion",
+        "channel": "CrossFit",
+        "seconds": 17
+      },
+      {
+        "id": "jFqU5TdXJdM",
+        "title": "Modified Sit-up",
+        "channel": "CrossFit",
+        "seconds": 22
+      },
+      {
+        "id": "l5YsDbLN43Y",
+        "title": "GHD Sit-up with Chris Spealler",
+        "channel": "CrossFit",
+        "seconds": 23
+      }
+    ]
+  },
+  "Abdominal Infra": {
+    "search": "lying leg raise",
+    "source": "official",
+    "chosen": {
+      "id": "nGscqxkcpPk",
+      "title": "Seated Static Leg Raise",
+      "channel": "CrossFit",
+      "seconds": 19
+    },
+    "candidates": [
+      {
+        "id": "nGscqxkcpPk",
+        "title": "Seated Static Leg Raise",
+        "channel": "CrossFit",
+        "seconds": 19
+      }
+    ]
+  },
+  "Russian Twist": {
+    "search": "russian twist",
+    "source": "global",
+    "chosen": {
+      "id": "VfWoNC-NMII",
+      "title": "Russian Twist",
+      "channel": "Wodstar",
+      "seconds": 15
+    },
+    "candidates": [
+      {
+        "id": "VfWoNC-NMII",
+        "title": "Russian Twist",
+        "channel": "Wodstar",
+        "seconds": 15
+      },
+      {
+        "id": "99T1EfpMwPA",
+        "title": "How To Do A Russian Twist",
+        "channel": "PureGym",
+        "seconds": 20
+      },
+      {
+        "id": "XKR793a0LUE",
+        "title": "Russian Twist Exercise Demo",
+        "channel": "Transform with Nadia | Fitness & Yoga",
+        "seconds": 28
+      }
+    ]
+  },
+  "Dead Bug": {
+    "search": "dead bug exercise",
+    "source": "global",
+    "chosen": {
+      "id": "o4GKiEoYClI",
+      "title": "Dead Bug Exercise For Core Stability  | Pursuit Physical Therapy",
+      "channel": "Pursuit Physical Therapy",
+      "seconds": 21
+    },
+    "candidates": [
+      {
+        "id": "o4GKiEoYClI",
+        "title": "Dead Bug Exercise For Core Stability  | Pursuit Physical Therapy",
+        "channel": "Pursuit Physical Therapy",
+        "seconds": 21
+      },
+      {
+        "id": "E7HFWup8bfM",
+        "title": "How To Master The Dead Bug Core Exercise: Engage Abs And Stabilize Spine For A Pain-Free Back",
+        "channel": "MINDFUL AXIS",
+        "seconds": 22
+      },
+      {
+        "id": "jbWmbhElf3Q",
+        "title": "The Core-Training Workout: Dead Bug",
+        "channel": "ExperienceLifeMag",
+        "seconds": 15
+      },
+      {
+        "id": "f77ORcYYJ5U",
+        "title": "Dead bug! Core",
+        "channel": "Júlio Borba Fisioterapia",
+        "seconds": 17
+      }
+    ]
+  },
+  "Bird Dog": {
+    "search": "bird dog exercise",
+    "source": "global",
+    "chosen": {
+      "id": "QVRtIHp9h-M",
+      "title": "Alternating Bird Dog",
+      "channel": "The Active Life",
+      "seconds": 25
+    },
+    "candidates": [
+      {
+        "id": "QVRtIHp9h-M",
+        "title": "Alternating Bird Dog",
+        "channel": "The Active Life",
+        "seconds": 25
+      },
+      {
+        "id": "ZdAHe9_HeEw",
+        "title": "How to do a Bird Dog | Proper Form & Technique | NASM",
+        "channel": "National Academy of Sports Medicine (NASM)",
+        "seconds": 26
+      }
+    ]
+  },
+  "Hollow Hold": {
+    "search": "hollow hold",
+    "source": "official",
+    "chosen": {
+      "id": "sZxrs3C209k",
+      "title": "The Plank Hold",
+      "channel": "CrossFit",
+      "seconds": 18
+    },
+    "candidates": [
+      {
+        "id": "sZxrs3C209k",
+        "title": "The Plank Hold",
+        "channel": "CrossFit",
+        "seconds": 18
+      }
+    ]
+  },
+  "V-Up": {
+    "search": "v up exercise",
+    "source": "official",
+    "chosen": {
+      "id": "Mk4zCq9b6hU",
+      "title": "The V-Up",
+      "channel": "CrossFit",
+      "seconds": 30
+    },
+    "candidates": [
+      {
+        "id": "Mk4zCq9b6hU",
+        "title": "The V-Up",
+        "channel": "CrossFit",
+        "seconds": 30
+      }
+    ]
+  },
+  "Mountain Climber": {
+    "search": "mountain climbers",
+    "source": "global",
+    "chosen": {
+      "id": "kLh-uczlPLg",
+      "title": "How To Do Mountain Climbers",
+      "channel": "PureGym",
+      "seconds": 17
+    },
+    "candidates": [
+      {
+        "id": "kLh-uczlPLg",
+        "title": "How To Do Mountain Climbers",
+        "channel": "PureGym",
+        "seconds": 17
+      },
+      {
+        "id": "ruQ4ZwncXBg",
+        "title": "Marines Force Fitness-Mountain Climbers",
+        "channel": "U.S. Forces Fitness",
+        "seconds": 24
+      },
+      {
+        "id": "7LmA4zSitc4",
+        "title": "Slow mountain climbers",
+        "channel": "W10 Personal Training Gym",
+        "seconds": 30
+      }
+    ]
+  },
+  "Core": {
+    "search": "plank",
+    "source": "official",
+    "chosen": {
+      "id": "sZxrs3C209k",
+      "title": "The Plank Hold",
+      "channel": "CrossFit",
+      "seconds": 18
+    },
+    "candidates": [
+      {
+        "id": "sZxrs3C209k",
+        "title": "The Plank Hold",
+        "channel": "CrossFit",
+        "seconds": 18
+      },
+      {
+        "id": "krGW0UMDuzM",
+        "title": "At-Home: Single Arm, Single Leg Plank",
+        "channel": "CrossFit",
+        "seconds": 25
+      }
+    ]
+  },
+  "Superman": {
+    "search": "superman exercise",
+    "source": "global",
+    "chosen": {
+      "id": "EKorHUMid0c",
+      "title": "Superman - Exercise Demonstration",
+      "channel": "Pike Fitness",
+      "seconds": 9
+    },
+    "candidates": [
+      {
+        "id": "EKorHUMid0c",
+        "title": "Superman - Exercise Demonstration",
+        "channel": "Pike Fitness",
+        "seconds": 9
+      },
+      {
+        "id": "LZoWdePF1NQ",
+        "title": "How To Do A SUPERMAN HOLD | Exercise Demonstration Video and Guide",
+        "channel": "Live Lean TV Daily Exercises",
+        "seconds": 26
+      },
+      {
+        "id": "7E5QBsEuWsg",
+        "title": "Superman Exercise for Kids",
+        "channel": "kidcoach1",
+        "seconds": 26
+      },
+      {
+        "id": "IXjxzHzqbU0",
+        "title": "Superman Exercise Demo",
+        "channel": "Lindsey Pogson",
+        "seconds": 29
+      }
+    ]
+  },
+  "Extensão Lombar": {
+    "search": "back extension",
+    "source": "official",
+    "chosen": {
+      "id": "7X075Hrl5lE",
+      "title": "The GHD Hip Extension",
+      "channel": "CrossFit",
+      "seconds": 22
+    },
+    "candidates": [
+      {
+        "id": "7X075Hrl5lE",
+        "title": "The GHD Hip Extension",
+        "channel": "CrossFit",
+        "seconds": 22
+      }
+    ]
+  },
+  "Good Morning Halteres": {
+    "search": "dumbbell good morning",
+    "source": "global",
+    "chosen": {
+      "id": "mjMGaJGgIyo",
+      "title": "Dumbbell Seated Good Morning",
+      "channel": "Functional Bodybuilding",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "mjMGaJGgIyo",
+        "title": "Dumbbell Seated Good Morning",
+        "channel": "Functional Bodybuilding",
+        "seconds": 14
+      },
+      {
+        "id": "wUbsMNkkpLk",
+        "title": "How To Do A Dumbbell Good Morning",
+        "channel": "PureGym",
+        "seconds": 16
+      },
+      {
+        "id": "nWyx81AfTos",
+        "title": "How To Do A Barbell Good Morning",
+        "channel": "PureGym",
+        "seconds": 16
+      },
+      {
+        "id": "RGcNDV8d0Wc",
+        "title": "Seated Good Morning, Dumbbells",
+        "channel": "Kaliber Health",
+        "seconds": 24
+      },
+      {
+        "id": "WXD7lqv4Y0k",
+        "title": "Good Morning Exercise - How to Demo -  Strengthen Hamstrings & Lower Back",
+        "channel": "Group HIIT",
+        "seconds": 29
+      }
+    ]
+  },
+  "Good Morning": {
+    "search": "good morning exercise barbell",
+    "source": "global",
+    "chosen": {
+      "id": "nWyx81AfTos",
+      "title": "How To Do A Barbell Good Morning",
+      "channel": "PureGym",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "nWyx81AfTos",
+        "title": "How To Do A Barbell Good Morning",
+        "channel": "PureGym",
+        "seconds": 16
+      }
+    ]
+  },
+  "Bom Dia com Elástico": {
+    "search": "banded good morning",
+    "source": "global",
+    "chosen": {
+      "id": "PWuRsRfnaFc",
+      "title": "Banded Good Morning - OPEX Exercise Library",
+      "channel": "OPEX Fitness",
+      "seconds": 12
+    },
+    "candidates": [
+      {
+        "id": "PWuRsRfnaFc",
+        "title": "Banded Good Morning - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 12
+      },
+      {
+        "id": "1WFrKwEHxAs",
+        "title": "Banded Good Morning",
+        "channel": "Functional Bodybuilding",
+        "seconds": 13
+      }
+    ]
+  },
+  "Burpee": {
+    "search": "burpee",
+    "source": "official",
+    "chosen": {
+      "id": "_vKCPTsTsmc",
+      "title": "Burpee Backflips",
+      "channel": "CrossFit",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "_vKCPTsTsmc",
+        "title": "Burpee Backflips",
+        "channel": "CrossFit",
+        "seconds": 14
+      },
+      {
+        "id": "u4lvmtFqgio",
+        "title": "The Burpee",
+        "channel": "CrossFit",
+        "seconds": 16
+      },
+      {
+        "id": "IDnU9_fWkYw",
+        "title": "Burpee Pullover",
+        "channel": "CrossFit",
+        "seconds": 16
+      },
+      {
+        "id": "6Y60mFqcfNI",
+        "title": "Burpee Modification",
+        "channel": "CrossFit",
+        "seconds": 19
+      },
+      {
+        "id": "TU8QYVW0gDU",
+        "title": "The Burpee",
+        "channel": "CrossFit",
+        "seconds": 26
+      }
+    ]
+  },
+  "Burpee Tuck Jump": {
+    "search": "burpee tuck jump",
+    "source": "global",
+    "chosen": {
+      "id": "cIy5xO4-M3o",
+      "title": "Burpee With Tuck Jump",
+      "channel": "The Grind Gym",
+      "seconds": 6
+    },
+    "candidates": [
+      {
+        "id": "cIy5xO4-M3o",
+        "title": "Burpee With Tuck Jump",
+        "channel": "The Grind Gym",
+        "seconds": 6
+      },
+      {
+        "id": "HbBFGH890Lk",
+        "title": "Burpee Tuck Jump",
+        "channel": "Lauren Stallwood",
+        "seconds": 9
+      },
+      {
+        "id": "kB917sFCaIo",
+        "title": "Burpee tuck jump",
+        "channel": "Crossfit CDA",
+        "seconds": 11
+      },
+      {
+        "id": "_xtsx2up1OU",
+        "title": "Burpee Tuck Jump Demo - I.D.move Exercise Library",
+        "channel": "Chris Bostock - IDmove Personal Training",
+        "seconds": 11
+      },
+      {
+        "id": "i24kEOJvK4Q",
+        "title": "[Movements Demo] - Burpee Tuck Jump (Fitness) (CrossFit) (WOD) (Workout)",
+        "channel": "Wilear Program",
+        "seconds": 13
+      }
+    ]
+  },
+  "KBS Russo": {
+    "search": "russian kettlebell swing",
+    "source": "global",
+    "chosen": {
+      "id": "8C56NDNZ1i4",
+      "title": "Russian Kettlebell Swing - OPEX Exercise Library",
+      "channel": "OPEX Fitness",
+      "seconds": 9
+    },
+    "candidates": [
+      {
+        "id": "8C56NDNZ1i4",
+        "title": "Russian Kettlebell Swing - OPEX Exercise Library",
+        "channel": "OPEX Fitness",
+        "seconds": 9
+      },
+      {
+        "id": "CmpgYsIwzCw",
+        "title": "Russian Kettlebell Swing",
+        "channel": "The Active Life",
+        "seconds": 12
+      },
+      {
+        "id": "KkYOW3jDhoM",
+        "title": "Russian Kettlebell Swing",
+        "channel": "Marcus Filly",
+        "seconds": 14
+      },
+      {
+        "id": "VZsKA2_Sv8I",
+        "title": "Russian Kettlebell Swing Demo",
+        "channel": "Steph Gaudreau - Fuel Your Strength",
+        "seconds": 20
+      },
+      {
+        "id": "1cVT3ee9mgU",
+        "title": "Kettlebell Swing",
+        "channel": "StrongFirst",
+        "seconds": 27
+      }
+    ]
+  },
+  "Cal Bike": {
+    "search": "echo bike",
+    "source": "manual",
+    "chosen": null,
+    "candidates": [
+      {
+        "id": "TG0r9wfjyAo",
+        "title": "Tim Paulson - Echo Press",
+        "channel": "CrossFit",
+        "seconds": 25
+      }
+    ]
+  },
+  "Corrida": {
+    "search": "running",
+    "source": "official",
+    "chosen": {
+      "id": "Ixkmtp_ZFD8",
+      "title": "Running Modifications",
+      "channel": "CrossFit",
+      "seconds": 27
+    },
+    "candidates": [
+      {
+        "id": "Ixkmtp_ZFD8",
+        "title": "Running Modifications",
+        "channel": "CrossFit",
+        "seconds": 27
+      }
+    ]
+  },
+  "Polichinelo": {
+    "search": "jumping jacks",
+    "source": "official",
+    "chosen": {
+      "id": "PBHUfBzxczU",
+      "title": "Jumping Jacks",
+      "channel": "CrossFit",
+      "seconds": 5
+    },
+    "candidates": [
+      {
+        "id": "PBHUfBzxczU",
+        "title": "Jumping Jacks",
+        "channel": "CrossFit",
+        "seconds": 5
+      },
+      {
+        "id": "jwh94a0yZjI",
+        "title": "Standing Jumping Jacks",
+        "channel": "CrossFit",
+        "seconds": 12
+      }
+    ]
+  },
+  "Pular Corda": {
+    "search": "single unders jump rope",
+    "source": "official",
+    "chosen": {
+      "id": "VhvxTTR5hhw",
+      "title": "Single-unders Modification",
+      "channel": "CrossFit",
+      "seconds": 18
+    },
+    "candidates": [
+      {
+        "id": "VhvxTTR5hhw",
+        "title": "Single-unders Modification",
+        "channel": "CrossFit",
+        "seconds": 18
+      }
+    ]
+  },
+  "Wall Ball": {
+    "search": "wall ball shot",
+    "source": "global",
+    "chosen": {
+      "id": "uLVo9bxLdL4",
+      "title": "Wall Ball Shots",
+      "channel": "Barbell Shrugged",
+      "seconds": 7
+    },
+    "candidates": [
+      {
+        "id": "uLVo9bxLdL4",
+        "title": "Wall Ball Shots",
+        "channel": "Barbell Shrugged",
+        "seconds": 7
+      }
+    ]
+  },
+  "Sprawl": {
+    "search": "sprawl demo",
+    "source": "manual",
+    "chosen": {
+      "id": "4nypmSstZL8",
+      "title": "Sprawl - Movement Demo",
+      "channel": "Alexandre Coaching",
+      "seconds": 13
+    },
+    "candidates": [
+      {
+        "id": "E6kvaVAJJcs",
+        "title": "Burpee Sprawl Demo",
+        "channel": "Mikaela Di-Blasio",
+        "seconds": 10
+      },
+      {
+        "id": "AIeRItw0wTU",
+        "title": "Sprawl Jumps - Movement Demo",
+        "channel": "Alexandre Coaching",
+        "seconds": 12
+      },
+      {
+        "id": "4nypmSstZL8",
+        "title": "Sprawl - Movement Demo",
+        "channel": "Alexandre Coaching",
+        "seconds": 13
+      },
+      {
+        "id": "W_wPQ8DCnBg",
+        "title": "SPRAWL BURPEES DEMO-Embrace MVMNT Exercises",
+        "channel": "Embrace MVMNT",
+        "seconds": 15
+      },
+      {
+        "id": "l1OZ3Khk_70",
+        "title": "Sprawl Outs Demo",
+        "channel": "Results Health Club",
+        "seconds": 24
+      }
+    ]
+  },
+  "Agachamento com Salto": {
+    "search": "jump squat",
+    "source": "global",
+    "chosen": {
+      "id": "zXbs8X3mRyA",
+      "title": "Exercise Demo: Kettlebell Jump Squat",
+      "channel": "SoheeFit",
+      "seconds": 10
+    },
+    "candidates": [
+      {
+        "id": "zXbs8X3mRyA",
+        "title": "Exercise Demo: Kettlebell Jump Squat",
+        "channel": "SoheeFit",
+        "seconds": 10
+      },
+      {
+        "id": "YGGq0AE5Uyc",
+        "title": "Squat Jump",
+        "channel": "ExperienceLifeMag",
+        "seconds": 13
+      },
+      {
+        "id": "BRfxI2Es2lE",
+        "title": "How To Jump Squat",
+        "channel": "PureGym",
+        "seconds": 14
+      },
+      {
+        "id": "5xv0DKqe5XQ",
+        "title": "Pre-Plyometrics (Metric 5) ACL Exercise: Mini Squat Jump",
+        "channel": "MedStar Health",
+        "seconds": 30
+      }
+    ]
+  }
+}
