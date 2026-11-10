@@ -371,3 +371,4 @@ a.primary-btn{display:block;text-align:center;text-decoration:none;margin-top:8p
 .rest-bar[hidden],[hidden]{display:none !important}
 .pt-exp{fill:var(--muted)}
 main{padding-bottom:130px}
+.in input{text-align:center;padding:8px 2px}

@@ -71,8 +71,8 @@ function bindVideos(root) {
     e.preventDefault();
     const player = b.closest('[data-has-player]').querySelector('.ex-player');
     if (!player.hidden) { player.hidden = true; player.innerHTML = ''; b.textContent = b.dataset.label; return; }
-    player.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.video}?rel=0&modestbranding=1&playsinline=1"
-      title="Execução" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
+    player.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.video}?rel=0&modestbranding=1&playsinline=1&origin=${encodeURIComponent(location.origin)}"
+      title="Execução" frameborder="0" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
     player.hidden = false; b.textContent = '✕ Esconder vídeo';
   }));
 }
