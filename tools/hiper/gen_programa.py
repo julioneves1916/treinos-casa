@@ -10,6 +10,7 @@ Estrutura de cada sessão de musculação: Bloco A força (séries normais) → 
 import json, datetime as dt
 from pathlib import Path
 from catalogo import BY
+from dicas import D as DICAS, label as load_label, hint as load_hint
 import json as _j
 
 HERE = Path(__file__).resolve().parent
@@ -24,7 +25,20 @@ def ex(name, sets, reps, rir, unit="reps"):
     v = (VIDEOS.get(name) or {}).get("chosen")
     return {"name": name, "sets": sets, "reps": reps, "unit": unit, "rir": rir,
             "equip": c["equip"], "inc": c["inc"], "main": c["main"], "grupo": c["grupo"],
-            "video": {"id": v["id"], "title": v["title"], "channel": v["channel"], "seconds": v["seconds"]} if v else None}
+            "video": {"id": v["id"], "title": v["title"], "channel": v["channel"], "seconds": v["seconds"]} if v else None,
+            **load_info(name)}
+
+# roleta: passo e faixa por tipo de carga
+WHEEL = {"barra": (2.5, 0, 300), "halter": (1, 0, 60), "maquina": (2.5, 0, 300), "anilhas": (5, 0, 600),
+         "kb": (2, 0, 48), "corpo": (2.5, 0, 60), "tempo": (0, 0, 0)}
+
+def load_info(name):
+    d = DICAS.get(name)
+    if not d:
+        return {}
+    step, lo, hi = WHEEL[d["carga"]]
+    return {"load": d["carga"], "load_label": load_label(d["carga"]), "load_hint": load_hint(d["carga"]),
+            "wheel": {"step": step, "min": lo, "max": hi}, "tips": {"ok": d["ok"], "erros": d["erros"]}}
 
 def A(e, rest): return {"kind": "straight", "rest_sec": rest, "items": [e]}
 def B(e1, e2, rest, rounds=3): return {"kind": "biset", "rounds": rounds, "rest_sec": rest, "items": [e1, e2]}

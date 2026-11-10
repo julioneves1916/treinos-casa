@@ -29,6 +29,7 @@ const Z = () => zones(settings(), App.program);
 // ---------- navegação
 function showView(name) {
   App.view = name;
+  if (name !== 'sessao' && typeof keepAwake === 'function' && Awake.want) keepAwake(false);
   $$('.view').forEach(v => v.classList.toggle('active', v.id === `view-${name}`));
   $$('.tab').forEach(t => t.classList.toggle('active', t.dataset.view === (name === 'sessao' ? 'agenda' : name)));
   window.scrollTo({ top: 0, behavior: 'instant' });
@@ -67,7 +68,7 @@ function videoBtn(v, label = '▶ Ver execução') {
   return `<button type="button" class="ex-video" data-video="${esc(v.id)}" data-label="${esc(label)}">${label}</button>`;
 }
 function bindVideos(root) {
-  $$('button.ex-video', root).forEach(b => b.addEventListener('click', (e) => {
+  $$('button.ex-video[data-video]', root).forEach(b => b.addEventListener('click', (e) => {
     e.preventDefault();
     const player = b.closest('[data-has-player]').querySelector('.ex-player');
     if (!player.hidden) { player.hidden = true; player.innerHTML = ''; b.textContent = b.dataset.label; return; }
@@ -78,7 +79,7 @@ function bindVideos(root) {
 }
 const PHASE = { calibracao: 'Calibração', progressao: 'Progressão', leve: 'Semana leve' };
 const KIND_LABEL = { straight: 'Força', biset: 'Bi-set', triset: 'Tri-set' };
-const kgLabel = (it) => /halter/i.test(it.equip) && !/barra/i.test(it.equip) ? 'kg/mão' : 'kg';
+const kgLabel = (it) => it.load_label || (/halter/i.test(it.equip) && !/barra/i.test(it.equip) ? 'kg/halter' : 'kg');
 const fmtNum = (x) => (x === null || x === undefined || x === '') ? '' : String(Math.round(Number(x) * 10) / 10).replace('.', ',');
 const toNum = (s) => { const n = Number(String(s).replace(',', '.')); return isFinite(n) ? n : null; };
 
@@ -149,7 +150,26 @@ function renderAgenda() {
   const tp = $('#toggle-past'); if (tp) tp.addEventListener('click', () => { App.showPast = !App.showPast; renderAgenda(); });
 }
 
-function openSession(id) { App.current = id; renderSession(id); showView('sessao'); }
+function openSession(id) { App.current = id; renderSession(id); showView('sessao'); keepAwake(true); }
+
+// ---------- tela acesa durante a sessão (Screen Wake Lock API; iOS 18.4+ também no app da Tela de Início)
+const Awake = { lock: null, want: false };
+async function keepAwake(on) {
+  Awake.want = on;
+  try {
+    if (on && 'wakeLock' in navigator && !Awake.lock && document.visibilityState === 'visible') {
+      Awake.lock = await navigator.wakeLock.request('screen');
+      Awake.lock.addEventListener('release', () => { Awake.lock = null; paintAwake(); });
+    } else if (!on && Awake.lock) { await Awake.lock.release(); Awake.lock = null; }
+  } catch (e) { Awake.lock = null; }
+  paintAwake();
+}
+function paintAwake() {
+  const el = $('#awake'); if (!el) return;
+  el.textContent = !('wakeLock' in navigator) ? 'Tela acesa indisponível neste aparelho' : Awake.lock ? '☀︎ Tela fica acesa durante o treino' : 'Tela pode apagar (toque para manter acesa)';
+  el.classList.toggle('on', !!Awake.lock);
+}
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Awake.want) keepAwake(true); });
 
 // ======================================================================
 // SESSÃO
@@ -168,6 +188,7 @@ function renderSession(id) {
       <p class="detail-estrutura">${esc(s.focus)}</p>
       ${log && log.status === 'done' ? `<p class="tag ok">Feito em ${fmtDate(log.date)}</p>` : ''}
       ${log && log.status === 'skipped' ? `<p class="tag warn">Pulado</p>` : ''}
+      <button type="button" id="awake" class="awake"></button>
     </header>`;
 
   if (s.kind === 'strength') html += strengthHtml(s, log);
@@ -183,6 +204,8 @@ function renderSession(id) {
     </div>`;
   root.innerHTML = html;
   $('#back').addEventListener('click', () => go('agenda'));
+  $('#awake').addEventListener('click', () => keepAwake(true));
+  paintAwake();
   bindVideos(root);
   if (s.kind === 'strength') bindStrength(root, s);
   else bindCardio(root, s);
@@ -233,28 +256,32 @@ function strengthHtml(s, log) {
       const last = sug.last;
       const lastTxt = last ? `Última (${fmtDate(last.date, { day: '2-digit', month: 'short' })}): ${last.sets.map(x => `${fmtNum(x.kg)}×${x.reps}`).join(' · ')}` : '';
       const target = it.unit === 's' ? `${it.sets} × ${it.reps[0]}–${it.reps[1]} s` : `${it.sets} × ${it.reps[0]}–${it.reps[1]} reps`;
+      const tips = it.tips ? `<button type="button" class="ex-video ex-tips-btn">💡 Dicas de execução</button>` : '';
       html += `<div class="ex-card" data-has-player data-key="${key}">
         <div class="ex-head">
           <div>
             <div class="ex-name">${esc(it.name)}${it.main ? ' <span class="tag mini">principal</span>' : ''}</div>
             <div class="ex-sets">${target} · RIR ${esc(it.rir)} · ${esc(it.equip)}</div>
+            ${it.load_hint ? `<div class="ex-hint">${esc(it.load_hint)}</div>` : ''}
           </div>
         </div>
-        <div class="ex-actions">${videoBtn(it.video)}</div>
+        <div class="ex-actions">${videoBtn(it.video)}${tips}</div>
         <div class="ex-player" hidden></div>
+        ${it.tips ? `<div class="ex-tips" hidden>
+          <p class="tips-h ok">Como fazer</p><ul>${it.tips.ok.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+          <p class="tips-h err">Erros comuns</p><ul>${it.tips.erros.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+        </div>` : ''}
         ${lastTxt ? `<div class="ex-last">${esc(lastTxt)}</div>` : ''}
         <div class="ex-sug sug-${sug.kind}">${sug.kg !== null && it.inc ? `<strong>Sugerido: ${fmtNum(sug.kg)} ${kgLabel(it)}</strong> · ` : ''}${esc(sug.note)}</div>
         <div class="set-rows">`;
       for (let i = 0; i < it.sets; i++) {
         const x = sets[i] || {};
-        const kgVal = x.kg ?? '';
-        const kgPh = sug.kg !== null && it.inc ? fmtNum(sug.kg) : '—';
-        html += `<div class="set-row ${x.done ? 'done' : ''}" data-i="${i}">
+        html += `<div class="set-row ${x.done ? 'done' : ''} ${hasKg(it) ? '' : 'no-kg'}" data-i="${i}">
           <span class="set-n">${b.kind === 'straight' ? i + 1 : 'V' + (i + 1)}</span>
-          ${it.inc ? `<label class="in"><input class="in-kg" inputmode="decimal" placeholder="${kgPh}" value="${fmtNum(kgVal)}" aria-label="Carga"><small>${kgLabel(it)}</small></label>` : `<label class="in"><input class="in-kg" inputmode="decimal" placeholder="extra" value="${fmtNum(kgVal)}" aria-label="Carga extra"><small>+kg</small></label>`}
-          <label class="in"><input class="in-reps" inputmode="numeric" placeholder="${it.reps[1]}" value="${x.reps ?? ''}" aria-label="Repetições"><small>${it.unit === 's' ? 's' : 'reps'}</small></label>
-          <div class="rir" role="group" aria-label="RIR">${[0, 1, 2, 3].map(r => `<button class="${String(x.rir) === String(r) ? 'on' : ''}" data-rir="${r}">${r === 3 ? '3+' : r}</button>`).join('')}</div>
-          <button class="set-ok" aria-label="Série feita">✓</button>
+          ${hasKg(it) ? `<button type="button" class="pick pick-kg" aria-label="Carga"></button>` : ''}
+          <button type="button" class="pick pick-reps" aria-label="${it.unit === 's' ? 'Segundos' : 'Repetições'}"></button>
+          <div class="rir" role="group" aria-label="RIR">${[0, 1, 2, 3].map(r => `<button type="button" class="${String(x.rir) === String(r) ? 'on' : ''}" data-rir="${r}">${r === 3 ? '3+' : r}</button>`).join('')}</div>
+          <button type="button" class="set-ok" aria-label="Série feita">✓</button>
         </div>`;
       }
       html += `</div></div>`;
@@ -270,11 +297,30 @@ function strengthHtml(s, log) {
   }
   return html;
 }
+
+// ---------- registro por série (roleta)
+const hasKg = (it) => it.load ? it.load !== 'tempo' : it.unit !== 's';
+const DEFAULT_KG = { barra: 20, halter: 10, maquina: 20, anilhas: 40, kb: 12, corpo: 0 };
+function setsOf(sid, key) { const l = App.st.logs[sid]; return (l && l.sets && l.sets[key]) || []; }
+function paintRow(row, it, x, sug) {
+  const kgB = $('.pick-kg', row), rB = $('.pick-reps', row);
+  const unitR = it.unit === 's' ? 's' : 'reps';
+  if (kgB) {
+    const has = x.kg !== undefined && x.kg !== null && x.kg !== '';
+    const ph = sug && sug.kg !== null && it.inc ? fmtNum(sug.kg) : '—';
+    kgB.innerHTML = `<b class="${has ? '' : 'ph'}">${has ? fmtNum(x.kg) : ph}</b><small>${esc(kgLabel(it))}</small>`;
+  }
+  const hasR = x.reps !== undefined && x.reps !== null && x.reps !== '';
+  rB.innerHTML = `<b class="${hasR ? '' : 'ph'}">${hasR ? x.reps : it.reps[1]}</b><small>${unitR}</small>`;
+  row.classList.toggle('done', !!x.done);
+  $$('.rir button', row).forEach(b => b.classList.toggle('on', x.rir !== null && x.rir !== undefined && String(x.rir) === b.dataset.rir));
+}
 function bindStrength(root, s) {
   $$('.ex-card[data-key]', root).forEach(card => {
     const key = card.dataset.key;
     const [bi, ii] = key.split('.').map(Number);
     const b = s.blocks[bi], it = b.items[ii];
+    const sug = suggest(App.st.logs, App.program, s, it);
     const rows = $$('.set-row', card);
     const save = (i, patch) => {
       const l = getLog(s.id); l.sets = l.sets || {};
@@ -282,34 +328,106 @@ function bindStrength(root, s) {
       arr[i] = Object.assign({}, arr[i] || {}, patch, { t: Date.now() });
       if (!l.startedAt) l.startedAt = new Date().toISOString();
       touch(l); commit();
+      return arr[i];
     };
+    const repaint = () => rows.forEach((r, j) => paintRow(r, it, setsOf(s.id, key)[j] || {}, sug));
+    repaint();
+    const tb = $('.ex-tips-btn', card);
+    if (tb) tb.addEventListener('click', () => {
+      const p = $('.ex-tips', card); p.hidden = !p.hidden;
+      tb.textContent = p.hidden ? '💡 Dicas de execução' : '✕ Esconder dicas';
+    });
     rows.forEach((row, i) => {
-      const kg = $('.in-kg', row), reps = $('.in-reps', row);
-      kg.addEventListener('change', () => {
-        save(i, { kg: toNum(kg.value) });
-        // propaga a carga para as séries seguintes ainda vazias
-        rows.slice(i + 1).forEach((r2, j) => { const k2 = $('.in-kg', r2); if (!k2.value) { k2.value = kg.value; save(i + 1 + j, { kg: toNum(kg.value) }); } });
+      const open = () => openPicker(s, it, b, i, sug, key, (vals, markDone) => {
+        const patch = { kg: vals.kg, reps: vals.reps, rir: vals.rir };
+        if (markDone) patch.done = true;
+        save(i, patch);
+        // propaga a carga para as séries seguintes ainda sem carga
+        if (vals.kg !== undefined && vals.kg !== null) {
+          const cur = setsOf(s.id, key);
+          for (let j = i + 1; j < it.sets; j++) if (!cur[j] || cur[j].kg === undefined || cur[j].kg === null) save(j, { kg: vals.kg });
+        }
+        repaint();
+        if (markDone) afterSet(s, bi, ii, i);
       });
-      reps.addEventListener('change', () => save(i, { reps: toNum(reps.value) }));
+      $$('.pick', row).forEach(p => p.addEventListener('click', open));
       $$('.rir button', row).forEach(btn => btn.addEventListener('click', () => {
-        const on = btn.classList.contains('on');
-        $$('.rir button', row).forEach(x => x.classList.remove('on'));
-        if (!on) btn.classList.add('on');
-        save(i, { rir: on ? null : Number(btn.dataset.rir) });
+        const x = setsOf(s.id, key)[i] || {};
+        const on = String(x.rir) === btn.dataset.rir;
+        save(i, { rir: on ? null : Number(btn.dataset.rir) }); repaint();
       }));
       $('.set-ok', row).addEventListener('click', () => {
-        const doneNow = !row.classList.contains('done');
-        // preenche com sugestão/alvo se o campo ficou vazio
-        if (doneNow) {
-          if (!kg.value && kg.placeholder && /\d/.test(kg.placeholder)) kg.value = kg.placeholder;
-          if (!reps.value) reps.value = reps.placeholder;
+        const x = setsOf(s.id, key)[i] || {};
+        const doneNow = !x.done;
+        const patch = { done: doneNow };
+        if (doneNow) { // completa o que ficou vazio com a sugestão / alvo
+          if (hasKg(it) && (x.kg === undefined || x.kg === null)) patch.kg = sug.kg !== null && it.inc ? sug.kg : (prevKg(s.id, key, i) ?? (it.load === 'corpo' ? 0 : null));
+          if (x.reps === undefined || x.reps === null) patch.reps = it.reps[1];
         }
-        row.classList.toggle('done', doneNow);
-        save(i, { done: doneNow, kg: toNum(kg.value), reps: toNum(reps.value) });
+        save(i, patch); repaint();
         if (doneNow) afterSet(s, bi, ii, i);
       });
     });
   });
+}
+function prevKg(sid, key, i) { const a = setsOf(sid, key); for (let j = i - 1; j >= 0; j--) if (a[j] && a[j].kg != null) return a[j].kg; return null; }
+
+// ---------- roleta (bottom sheet com rodas, estilo timer do iPhone)
+const WI = 44; // altura de cada item da roda
+function wheelValues(it) {
+  const w = it.wheel || { step: it.inc || 2.5, min: 0, max: 200 };
+  const out = []; for (let v = w.min; v <= w.max + 1e-9; v += w.step) out.push(Math.round(v * 100) / 100);
+  return out;
+}
+function buildWheel(el, values, fmt, initial) {
+  if (initial !== null && initial !== undefined && !values.includes(initial)) { values = values.concat([initial]).sort((a, b) => a - b); }
+  el.innerHTML = values.map(v => `<div class="wi">${fmt(v)}</div>`).join('');
+  let idx = 0, best = Infinity;
+  values.forEach((v, k) => { const d = Math.abs(v - (initial ?? values[0])); if (d < best) { best = d; idx = k; } });
+  const items = el.children;
+  const mark = () => { const k = Math.max(0, Math.min(values.length - 1, Math.round(el.scrollTop / WI))); for (let j = 0; j < items.length; j++) items[j].classList.toggle('sel', j === k); };
+  el.onscroll = () => requestAnimationFrame(mark);
+  Array.from(items).forEach((n, k) => n.addEventListener('click', () => el.scrollTo({ top: k * WI, behavior: 'smooth' })));
+  requestAnimationFrame(() => { el.scrollTop = idx * WI; mark(); });
+  el.value = () => values[Math.max(0, Math.min(values.length - 1, Math.round(el.scrollTop / WI)))];
+}
+function openPicker(s, it, b, i, sug, key, onSave) {
+  const x = setsOf(s.id, key)[i] || {};
+  let sh = $('#picker');
+  if (!sh) { sh = document.createElement('div'); sh.id = 'picker'; sh.className = 'sheet-bg'; document.body.appendChild(sh); }
+  const unitR = it.unit === 's' ? 'segundos' : 'repetições';
+  sh.innerHTML = `<div class="sheet" role="dialog" aria-label="Registrar série">
+    <div class="sheet-grip"></div>
+    <p class="eyebrow">${esc(it.name)}</p>
+    <div class="sheet-title">${b.kind === 'straight' ? 'Série ' + (i + 1) : 'Volta ' + (i + 1)} de ${it.sets}</div>
+    ${it.load_hint ? `<p class="muted small">${esc(it.load_hint)}</p>` : ''}
+    <div class="wheels">
+      ${hasKg(it) ? `<div class="wheel-col"><div class="wheel" id="w-kg"></div><small>${esc(kgLabel(it))}</small></div>` : ''}
+      <div class="wheel-col"><div class="wheel" id="w-reps"></div><small>${unitR}</small></div>
+    </div>
+    <p class="muted small" style="margin-top:6px">RIR · quantas ainda sairiam</p>
+    <div class="rir big" id="w-rir">${[0, 1, 2, 3].map(r => `<button type="button" data-rir="${r}" class="${String(x.rir) === String(r) ? 'on' : ''}">${r === 3 ? '3+' : r}</button>`).join('')}</div>
+    <div class="sheet-actions">
+      <button type="button" class="secondary-btn" id="w-save">Salvar</button>
+      <button type="button" class="primary-btn" id="w-done">${x.done ? 'Salvar' : 'Série feita ✓'}</button>
+    </div>
+  </div>`;
+  const initKg = x.kg ?? (sug.kg !== null && it.inc ? sug.kg : null) ?? prevKg(s.id, key, i) ?? (sug.last ? sug.last.sets[0].kg : null) ?? DEFAULT_KG[it.load] ?? 0;
+  const initR = x.reps ?? it.reps[1];
+  if (hasKg(it)) buildWheel($('#w-kg', sh), wheelValues(it), fmtNum, Number(initKg));
+  const rv = []; if (it.unit === 's') { for (let v = 0; v <= 180; v += 5) rv.push(v); } else { for (let v = 0; v <= 40; v++) rv.push(v); }
+  buildWheel($('#w-reps', sh), rv, String, Number(initR));
+  let rir = x.rir ?? null;
+  $$('#w-rir button', sh).forEach(btn => btn.addEventListener('click', () => {
+    const on = btn.classList.contains('on'); $$('#w-rir button', sh).forEach(z => z.classList.remove('on'));
+    if (!on) btn.classList.add('on'); rir = on ? null : Number(btn.dataset.rir);
+  }));
+  const close = () => { sh.classList.remove('open'); setTimeout(() => { sh.hidden = true; sh.innerHTML = ''; }, 200); };
+  const vals = () => ({ kg: hasKg(it) ? $('#w-kg', sh).value() : undefined, reps: $('#w-reps', sh).value(), rir });
+  $('#w-save', sh).addEventListener('click', () => { onSave(vals(), false); close(); });
+  $('#w-done', sh).addEventListener('click', () => { onSave(vals(), !x.done); close(); });
+  sh.onclick = (e) => { if (e.target === sh) close(); };
+  sh.hidden = false; requestAnimationFrame(() => sh.classList.add('open'));
 }
 function afterSet(s, bi, ii, i) {
   const b = s.blocks[bi], it = b.items[ii];
