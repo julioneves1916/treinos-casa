@@ -5,6 +5,7 @@
     { "route": "/.auth/login/twitter", "statusCode": 404 },
     { "route": "/login", "rewrite": "/.auth/login/github?post_login_redirect_uri=/" },
     { "route": "/api/polar-webhook", "allowedRoles": ["anonymous"] },
+    { "route": "/api/polar-callback", "allowedRoles": ["anonymous"] },
     { "route": "/manifest.webmanifest", "allowedRoles": ["anonymous"] },
     { "route": "/sw.js", "allowedRoles": ["anonymous"], "headers": { "Cache-Control": "no-cache" } },
     { "route": "/icons/*", "allowedRoles": ["anonymous"] },
