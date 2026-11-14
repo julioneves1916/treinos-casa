@@ -3,3 +3,4 @@ __pycache__/
 tools/curate_log.txt
 *.xlsx
 node_modules/
+avaliacoes/

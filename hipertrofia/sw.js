@@ -1,5 +1,5 @@
 // Service worker: app shell em cache; /api e /.auth nunca passam pelo cache
-const CACHE = 'jnt-hiper-v3';
+const CACHE = 'jnt-hiper-v4';
 const ASSETS = ['./', 'index.html', 'styles.css', 'lib.js', 'polar.js', 'app.js', 'manifest.webmanifest',
   'data/programa.json', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable.png', 'icons/icon.svg'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).catch(() => {})); self.skipWaiting(); });

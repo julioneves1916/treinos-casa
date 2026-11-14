@@ -1305,5 +1305,283 @@
       "seconds": 15
     },
     "candidates": []
+  },
+  "Remada Apoiada": {
+    "search": "chest supported dumbbell row",
+    "source": "manual",
+    "chosen": {
+      "id": "0-DXJiceG-0",
+      "title": "Chest Supported Incline Dumbbell Row - OPEX Exercise Library",
+      "channel": "OPEX Fitness",
+      "seconds": 15
+    },
+    "candidates": [
+      {
+        "id": "t7VDDNKBNx8",
+        "title": "Double Dumbbell Row",
+        "channel": "CrossFit",
+        "seconds": 13
+      },
+      {
+        "id": "wNoXB3-QMbY",
+        "title": "Single Dumbbell Row",
+        "channel": "CrossFit",
+        "seconds": 19
+      }
+    ]
+  },
+  "Elevação em Y": {
+    "search": "incline prone y raise",
+    "source": "global",
+    "chosen": {
+      "id": "E34NwLnGx60",
+      "title": "Incline Prone Y-Raise",
+      "channel": "D. Martin Fitness",
+      "seconds": 18
+    },
+    "candidates": [
+      {
+        "id": "E34NwLnGx60",
+        "title": "Incline Prone Y-Raise",
+        "channel": "D. Martin Fitness",
+        "seconds": 18
+      },
+      {
+        "id": "WAnSCSJbQYw",
+        "title": "Prone Y, T, A, W Raise on Incline Bench",
+        "channel": "Simone Sports Performance",
+        "seconds": 19
+      },
+      {
+        "id": "FqLFX2OpaVY",
+        "title": "PRONE INCLINE DUMBBELL Y-RAISE ",
+        "channel": "Edge Strength and Conditioning",
+        "seconds": 24
+      },
+      {
+        "id": "w1AWGKubE5U",
+        "title": "Prone Y Raise",
+        "channel": "Performance Course",
+        "seconds": 10
+      },
+      {
+        "id": "rY_kqh9ufrw",
+        "title": "Incline Prone Y Raises",
+        "channel": "Elo Performance",
+        "seconds": 15
+      }
+    ]
+  },
+  "Puxada Unilateral": {
+    "search": "single arm lat pulldown",
+    "source": "global",
+    "chosen": {
+      "id": "HBC5s98wXko",
+      "title": "Single Arm Cable Lat Pulldown Machine",
+      "channel": "OPEX Fitness",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "HBC5s98wXko",
+        "title": "Single Arm Cable Lat Pulldown Machine",
+        "channel": "OPEX Fitness",
+        "seconds": 14
+      },
+      {
+        "id": "J81mealJ9j4",
+        "title": "Single Arm Cable Lat Pulldown",
+        "channel": "Functional Bodybuilding",
+        "seconds": 15
+      }
+    ]
+  },
+  "Landmine Press Unilateral": {
+    "search": "single arm landmine press",
+    "source": "global",
+    "chosen": {
+      "id": "5Cs27w8WVz4",
+      "title": "Single Arm Landmine Press",
+      "channel": "Functional Bodybuilding",
+      "seconds": 14
+    },
+    "candidates": [
+      {
+        "id": "5Cs27w8WVz4",
+        "title": "Single Arm Landmine Press",
+        "channel": "Functional Bodybuilding",
+        "seconds": 14
+      },
+      {
+        "id": "wba9Gkgx5lU",
+        "title": "Standing 1-arm Landmine Press",
+        "channel": "Bullett Performance Training",
+        "seconds": 10
+      }
+    ]
+  },
+  "Crossover Baixo-Alto": {
+    "search": "low to high cable fly",
+    "source": "manual",
+    "chosen": {
+      "id": "8bAUxZlIR38",
+      "title": "Cable Chest Fly Low to High",
+      "channel": "Functional Bodybuilding",
+      "seconds": 16
+    },
+    "candidates": []
+  },
+  "Caminhada com Carga Unilateral": {
+    "search": "suitcase carry",
+    "source": "manual",
+    "chosen": {
+      "id": "VD6u03iRsD8",
+      "title": "Dumbbell Suitcase Carry",
+      "channel": "Strong Made Simple",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "5whPRPdrEiY",
+        "title": "Farmers Carry",
+        "channel": "CrossFit",
+        "seconds": 12
+      },
+      {
+        "id": "IU9yYNTON38",
+        "title": "The Zercher Carry",
+        "channel": "CrossFit",
+        "seconds": 19
+      }
+    ]
+  },
+  "Dead Bug": {
+    "search": "dead bug exercise",
+    "source": "manual",
+    "chosen": {
+      "id": "o4GKiEoYClI",
+      "title": "Dead Bug Exercise For Core Stability",
+      "channel": "Pursuit Physical Therapy",
+      "seconds": 21
+    },
+    "candidates": []
+  },
+  "Recolher o Queixo": {
+    "search": "chin tuck exercise",
+    "source": "manual",
+    "chosen": {
+      "id": "H0TWk06p5s4",
+      "title": "Chin Tuck",
+      "channel": "Northallerton Osteopaths at Hale House",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "7uWAtcQKeQo",
+        "title": "Banded Chin Tuck Exercise- Neck Strengthening",
+        "channel": "The Rehab Borough",
+        "seconds": 27
+      },
+      {
+        "id": "O2kkwT6t3R0",
+        "title": "\"The Chin Tuck\" -A Neck Strengthening and Posture Exercise -HD",
+        "channel": "Olympia Sports Chiropractor | Kelly Golob DC",
+        "seconds": 30
+      },
+      {
+        "id": "H0TWk06p5s4",
+        "title": "34. Chin Tuck",
+        "channel": "Northallerton Osteopaths at Hale House",
+        "seconds": 16
+      }
+    ]
+  },
+  "Deslizamento na Parede": {
+    "search": "wall slides shoulder",
+    "source": "manual",
+    "chosen": {
+      "id": "HXZQzLVyn5Q",
+      "title": "How to Improve Posture with the Wall Slide",
+      "channel": "DR MATT FONTAINE",
+      "seconds": 20
+    },
+    "candidates": []
+  },
+  "Abertura com Elástico": {
+    "search": "band pull apart",
+    "source": "global",
+    "chosen": {
+      "id": "eZwnwWMkEL4",
+      "title": "Band Pull-Apart Exercise | Onnit Tutorials",
+      "channel": "Onnit",
+      "seconds": 11
+    },
+    "candidates": [
+      {
+        "id": "eZwnwWMkEL4",
+        "title": "Band Pull-Apart Exercise | Onnit Tutorials",
+        "channel": "Onnit",
+        "seconds": 11
+      },
+      {
+        "id": "XUEqe5WrGSw",
+        "title": "Standing Diagonal Band Pull Apart",
+        "channel": "Capital District Sport and Fitness",
+        "seconds": 23
+      },
+      {
+        "id": "pct3bP74WSw",
+        "title": "Band Pull Apart",
+        "channel": "The Active Life",
+        "seconds": 23
+      },
+      {
+        "id": "smSSXITNpCI",
+        "title": "How To Do Band Pull Aparts",
+        "channel": "Rogue Fitness",
+        "seconds": 30
+      }
+    ]
+  },
+  "Alongamento do Peitoral na Porta": {
+    "search": "doorway pec stretch",
+    "source": "manual",
+    "chosen": {
+      "id": "wukN5h-8FIk",
+      "title": "Doorway Pec Stretch - Exercise Demo",
+      "channel": "irl.coach",
+      "seconds": 24
+    },
+    "candidates": []
+  },
+  "Extensão Torácica no Rolo": {
+    "search": "foam roller thoracic extension",
+    "source": "global",
+    "chosen": {
+      "id": "7CQc5JpyZso",
+      "title": "Thoracic Extension over Foam Roller Head Supported | Spine Range of Motion",
+      "channel": "E3 Rehab Exercise Library",
+      "seconds": 16
+    },
+    "candidates": [
+      {
+        "id": "7CQc5JpyZso",
+        "title": "Thoracic Extension over Foam Roller Head Supported | Spine Range of Motion",
+        "channel": "E3 Rehab Exercise Library",
+        "seconds": 16
+      },
+      {
+        "id": "4Iwfcujrb44",
+        "title": "Thoracic Extension over Foam Roller Arms Overhead | Spine Range of Motion",
+        "channel": "E3 Rehab Exercise Library",
+        "seconds": 17
+      },
+      {
+        "id": "cqd2USvPuCA",
+        "title": "Foam Roller: Thoracic Spine",
+        "channel": "Runner's World",
+        "seconds": 27
+      }
+    ]
   }
 }

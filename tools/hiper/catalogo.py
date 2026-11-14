@@ -72,5 +72,19 @@ C = [
   # --- Cardio (sem carga)
   dict(name="Remo Ergômetro",           en="rowing machine",              equip="Remo (Concept2)",       inc=0,   main=False, grupo="Cardio"),
   dict(name="Escada (Stair Climber)",   en="stair climber",               equip="Simulador de escada (stair climber)", inc=0, main=False, grupo="Cardio"),
+  # --- v2 (14/11/2026): postura, unilateral, peito alto
+  dict(name="Remada Apoiada",           en="chest supported dumbbell row", equip="Halteres + banco inclinado", inc=2, main=False, grupo="Costas"),
+  dict(name="Elevação em Y",            en="incline prone y raise",       equip="Halteres leves + banco inclinado", inc=1, main=False, grupo="Ombro posterior"),
+  dict(name="Puxada Unilateral",        en="single arm lat pulldown",     equip="Polia alta + pegador",  inc=2.5, main=False, grupo="Costas"),
+  dict(name="Landmine Press Unilateral",en="single arm landmine press",   equip="Barra no landmine + anilhas", inc=2.5, main=False, grupo="Ombro"),
+  dict(name="Crossover Baixo-Alto",     en="low to high cable fly",       equip="Polia baixa dupla",     inc=2.5, main=False, grupo="Peito"),
+  dict(name="Caminhada com Carga Unilateral", en="suitcase carry",       equip="Halter ou kettlebell (um lado)", inc=2, main=False, grupo="Core"),
+  dict(name="Dead Bug",                 en="dead bug exercise",           equip="Colchonete",            inc=0, main=False, grupo="Core"),
+  # --- aquecimento postural (sem registro de carga)
+  dict(name="Recolher o Queixo",        en="chin tuck exercise",          equip="Parede",                inc=0, main=False, grupo="Aquecimento"),
+  dict(name="Deslizamento na Parede",   en="wall slides shoulder",        equip="Parede",                inc=0, main=False, grupo="Aquecimento"),
+  dict(name="Abertura com Elástico",    en="band pull apart",             equip="Elástico",              inc=0, main=False, grupo="Aquecimento"),
+  dict(name="Alongamento do Peitoral na Porta", en="doorway pec stretch", equip="Batente da porta",      inc=0, main=False, grupo="Aquecimento"),
+  dict(name="Extensão Torácica no Rolo",en="foam roller thoracic extension", equip="Rolo de espuma",     inc=0, main=False, grupo="Aquecimento"),
 ]
 BY = {e["name"]: e for e in C}

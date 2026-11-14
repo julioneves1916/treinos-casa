@@ -1,0 +1,904 @@
+[
+ {
+  "seq": 1,
+  "planned": "2026-11-10",
+  "cycle": 1,
+  "week": 1,
+  "cycle_week": 1,
+  "phase": "calibracao",
+  "kind": "strength",
+  "id": "S001",
+  "title": "Inferiores A",
+  "focus": "Quadríceps",
+  "blocks": [
+   {
+    "kind": "straight",
+    "rest_sec": 150,
+    "items": [
+     {
+      "name": "Agachamento Livre",
+      "sets": 4,
+      "reps": [
+       6,
+       8
+      ],
+      "unit": "reps",
+      "rir": "1–3",
+      "equip": "Barra + rack",
+      "inc": 2.5,
+      "main": true,
+      "grupo": "Quadríceps",
+      "video": {
+       "id": "-bJIpOq-LWk",
+       "title": "How to do a Barbell Back Squat",
+       "channel": "National Academy of Sports Medicine (NASM)",
+       "seconds": 12
+      },
+      "load": "barra",
+      "load_label": "kg total",
+      "load_hint": "Registre o total: barra (olímpica 20 kg, W ~10 kg) + todas as anilhas.",
+      "wheel": {
+       "step": 2.5,
+       "min": 0,
+       "max": 300
+      },
+      "tips": {
+       "ok": [
+        "Barra apoiada no trapézio (não no pescoço); mãos firmes, cotovelos apontando para baixo.",
+        "Pés na largura dos ombros ou pouco mais, pontas levemente para fora (15–30°).",
+        "Respire fundo e trave o abdome antes de descer; solte o ar só depois de passar a parte mais difícil da subida.",
+        "Desça empurrando o quadril para trás e para baixo, joelhos acompanhando a direção dos pés, até a coxa ficar paralela ao chão ou um pouco abaixo, sem perder a curvatura da lombar.",
+        "Suba empurrando o chão com o pé inteiro, peito aberto, quadril e ombros subindo juntos."
+       ],
+       "erros": [
+        "Joelhos caindo para dentro na subida: pense em 'abrir o chão' com os pés.",
+        "Calcanhar saindo do chão: peso no meio do pé; se faltar mobilidade, calço baixo sob o calcanhar.",
+        "Quadril sobe antes do peito ('bom-dia'): reduza a carga e suba liderando com o peito.",
+        "Lombar arredonda no fundo: pare a descida um pouco antes desse ponto."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "kind": "straight",
+    "rest_sec": 120,
+    "items": [
+     {
+      "name": "Leg Press 45",
+      "sets": 3,
+      "reps": [
+       8,
+       10
+      ],
+      "unit": "reps",
+      "rir": "1–2",
+      "equip": "Leg press 45°",
+      "inc": 5,
+      "main": false,
+      "grupo": "Quadríceps",
+      "video": {
+       "id": "q4W4_VJbKW0",
+       "title": "How To Do A 45 Degree Leg Press",
+       "channel": "PureGym",
+       "seconds": 11
+      },
+      "load": "anilhas",
+      "load_label": "kg anilhas",
+      "load_hint": "Registre a soma das anilhas carregadas, sem o carrinho/barra.",
+      "wheel": {
+       "step": 5,
+       "min": 0,
+       "max": 600
+      },
+      "tips": {
+       "ok": [
+        "Lombar e glúteo colados no banco o tempo todo; segure as manoplas.",
+        "Pés no meio da plataforma, largura do quadril, pontas levemente para fora.",
+        "Desça até o joelho chegar perto de 90° (ou mais, se o quadril não descolar).",
+        "Empurre com o pé inteiro, sem estender o joelho até travar."
+       ],
+       "erros": [
+        "Quadril sai do banco no fundo (lombar enrola): diminua a amplitude.",
+        "Joelho trava no topo: mantenha leve flexão.",
+        "Joelhos se fechando: empurre-os na direção da ponta dos pés."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "kind": "biset",
+    "rounds": 3,
+    "rest_sec": 60,
+    "items": [
+     {
+      "name": "Agachamento Búlgaro",
+      "sets": 3,
+      "reps": [
+       10,
+       12
+      ],
+      "unit": "reps",
+      "rir": "1–2",
+      "equip": "Halteres + banco",
+      "inc": 2,
+      "main": false,
+      "grupo": "Quadríceps",
+      "video": {
+       "id": "Fmjj7wFJWRE",
+       "title": "Bulgarian Split Squat with Dumbbells",
+       "channel": "The Active Life",
+       "seconds": 20
+      },
+      "load": "halter",
+      "load_label": "kg/halter",
+      "load_hint": "Registre o peso de UM halter.",
+      "wheel": {
+       "step": 1,
+       "min": 0,
+       "max": 60
+      },
+      "tips": {
+       "ok": [
+        "Peito do pé de trás apoiado no banco; pé da frente longe o suficiente para o joelho não passar muito à frente da ponta.",
+        "Tronco levemente inclinado à frente (mais glúteo) ou mais reto (mais quadríceps).",
+        "Desça vertical até o joelho de trás quase tocar o chão.",
+        "Suba empurrando o calcanhar e o meio do pé da frente."
+       ],
+       "erros": [
+        "Base estreita demais (perde o equilíbrio): afaste um pouco os pés lateralmente.",
+        "Empurrar com a perna de trás: ela só apoia.",
+        "Joelho da frente caindo para dentro: alinhe com o segundo dedo do pé."
+       ]
+      }
+     },
+     {
+      "name": "Cadeira Extensora",
+      "sets": 3,
+      "reps": [
+       12,
+       15
+      ],
+      "unit": "reps",
+      "rir": "1–2",
+      "equip": "Cadeira extensora",
+      "inc": 5,
+      "main": false,
+      "grupo": "Quadríceps",
+      "video": {
+       "id": "4ZDm5EbiFI8",
+       "title": "How To Do A Leg Extension",
+       "channel": "PureGym",
+       "seconds": 14
+      },
+      "load": "maquina",
+      "load_label": "kg",
+      "load_hint": "Registre o número da pilha/pino da máquina ou polia.",
+      "wheel": {
+       "step": 2.5,
+       "min": 0,
+       "max": 300
+      },
+      "tips": {
+       "ok": [
+        "Joelho alinhado com o eixo da máquina; rolo acima do tornozelo.",
+        "Segure as alças e mantenha o quadril no banco.",
+        "Estenda até quase travar, segure 1 s contraindo o quadríceps, desça em 2–3 s."
+       ],
+       "erros": [
+        "Chutar a carga e descer sem controle: tempo de descida pelo menos 2 s.",
+        "Quadril levantando do banco: carga alta demais."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "kind": "biset",
+    "rounds": 3,
+    "rest_sec": 45,
+    "items": [
+     {
+      "name": "Stiff Halteres",
+      "sets": 3,
+      "reps": [
+       10,
+       12
+      ],
+      "unit": "reps",
+      "rir": "1–2",
+      "equip": "Halteres",
+      "inc": 2,
+      "main": false,
+      "grupo": "Posterior",
+      "video": {
+       "id": "xAL7lHwj30E",
+       "title": "Dumbbell Romanian Deadlift",
+       "channel": "Onnit Academy",
+       "seconds": 16
+      },
+      "load": "halter",
+      "load_label": "kg/halter",
+      "load_hint": "Registre o peso de UM halter.",
+      "wheel": {
+       "step": 1,
+       "min": 0,
+       "max": 60
+      },
+      "tips": {
+       "ok": [
+        "Halteres na frente das coxas, joelhos levemente flexionados.",
+        "Quadril para trás, halteres descem rente às pernas, lombar neutra.",
+        "Suba contraindo glúteo, sem hiperestender no topo."
+       ],
+       "erros": [
+        "Halteres se afastando do corpo.",
+        "Olhar para cima (estica o pescoço): olhar para o chão à frente."
+       ]
+      }
+     },
+     {
+      "name": "Panturrilha em Pé",
+      "sets": 3,
+      "reps": [
+       12,
+       15
+      ],
+      "unit": "reps",
+      "rir": "1–2",
+      "equip": "Máquina de panturrilha",
+      "inc": 5,
+      "main": false,
+      "grupo": "Panturrilha",
+      "video": {
+       "id": "u8-wLlBxFE4",
+       "title": "Workout Demos - Lower Body - Calves - Standing Calf Raise (Machine)",
+       "channel": "Fortius Dubai",
+       "seconds": 15
+      },
+      "load": "maquina",
+      "load_label": "kg",
+      "load_hint": "Registre o número da pilha/pino da máquina ou polia.",
+      "wheel": {
+       "step": 2.5,
+       "min": 0,
+       "max": 300
+      },
+      "tips": {
+       "ok": [
+        "Ponta dos pés na borda, calcanhar livre; joelhos estendidos (sem travar).",
+        "Desça até alongar bem a panturrilha (pausa de 1 s embaixo).",
+        "Suba o máximo possível, segure 1 s no topo."
+       ],
+       "erros": [
+        "Quicar no fundo: a pausa elimina o rebote.",
+        "Amplitude curta: panturrilha responde a amplitude total."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "kind": "triset",
+    "rounds": 3,
+    "rest_sec": 30,
+    "items": [
+     {
+      "name": "Goblet Squat",
+      "sets": 3,
+      "reps": [
+       12,
+       15
+      ],
+      "unit": "reps",
+      "rir": "0–1",
+      "equip": "Halter ou kettlebell",
+      "inc": 2,
+      "main": false,
+      "grupo": "Quadríceps",
+      "video": {
+       "id": "pEGfGwp6IEA",
+       "title": "Goblet Squat - OPEX Exercise Library",
+       "channel": "OPEX Fitness",
+       "seconds": 12
+      },
+      "load": "kb",
+      "load_label": "kg",
+      "load_hint": "Registre o peso do kettlebell (ou do halter).",
+      "wheel": {
+       "step": 2,
+       "min": 0,
+       "max": 48
+      },
+      "tips": {
+       "ok": [
+        "Halter ou kettlebell junto ao peito, cotovelos para baixo.",
+        "Pés um pouco além dos ombros, pontas para fora.",
+        "Desça entre as pernas com o tronco ereto; cotovelos podem tocar a parte de dentro dos joelhos.",
+        "Suba empurrando o chão, sem deixar o peso puxar o tronco para frente."
+       ],
+       "erros": [
+        "Peso afastado do corpo: cola no peito.",
+        "Calcanhares subindo: abra mais os pés."
+       ]
+      }
+     },
+     {
+      "name": "Abdominal na Polia",
+      "sets": 3,
+      "reps": [
+       12,
+       15
+      ],
+      "unit": "reps",
+      "rir": "0–1",
+      "equip": "Polia alta + corda",
+      "inc": 2.5,
+      "main": false,
+      "grupo": "Core",
+      "video": {
+       "id": "ToJeyhydUxU",
+       "title": "Cable Crunch: Do It Right!",
+       "channel": "Testosterone Nation",
+       "seconds": 26
+      },
+      "load": "maquina",
+      "load_label": "kg",
+      "load_hint": "Registre o número da pilha/pino da máquina ou polia.",
+      "wheel": {
+       "step": 2.5,
+       "min": 0,
+       "max": 300
+      },
+      "tips": {
+       "ok": [
+        "Ajoelhado, corda junto à cabeça; quadril parado.",
+        "Enrole a coluna levando os cotovelos em direção às coxas (flexão do tronco, não do quadril).",
+        "Volte devagar até alongar o abdome."
+       ],
+       "erros": [
+        "Sentar sobre os calcanhares para puxar com o peso do corpo.",
+        "Puxar com os braços."
+       ]
+      }
+     },
+     {
+      "name": "Prancha",
+      "sets": 3,
+      "reps": [
+       30,
+       45
+      ],
+      "unit": "s",
+      "rir": "0–1",
+      "equip": "Colchonete",
+      "inc": 0,
+      "main": false,
+      "grupo": "Core",
+      "video": {
+       "id": "sZxrs3C209k",
+       "title": "The Plank Hold",
+       "channel": "CrossFit",
+       "seconds": 18
+      },
+      "load": "tempo",
+      "load_label": "",
+      "load_hint": "",
+      "wheel": {
+       "step": 0,
+       "min": 0,
+       "max": 0
+      },
+      "tips": {
+       "ok": [
+        "Antebraços sob os ombros, corpo em linha reta.",
+        "Contraia abdome e glúteo e empurre o chão com os antebraços; respire normalmente."
+       ],
+       "erros": [
+        "Quadril caindo (lombar afunda).",
+        "Quadril alto demais.",
+        "Prender a respiração."
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "warmup": "5 min de remo em zona 1 + 2 séries leves (50% e 75%) do primeiro exercício."
+ },
+ {
+  "seq": 2,
+  "planned": "2026-11-11",
+  "cycle": 1,
+  "week": 1,
+  "cycle_week": 1,
+  "phase": "calibracao",
+  "kind": "strength",
+  "id": "S002",
+  "title": "Superiores A",
+  "focus": "Peito, ombro e tríceps",
+  "blocks": [
+   {
+    "kind": "straight",
+    "rest_sec": 150,
+    "items": [
+     {
+      "name": "Supino Reto Barra",
+      "sets": 4,
+      "reps": [
+       6,
+       8
+      ],
+      "unit": "reps",
+      "rir": "1–3",
+      "equip": "Barra + banco reto",
+      "inc": 2.5,
+      "main": true,
+      "grupo": "Peito",
+      "video": {
+       "id": "ejI1Nlsul9k",
+       "title": "Barbell Bench Press - OPEX Exercise Library",
+       "channel": "OPEX Fitness",
+       "seconds": 9
+      },
+      "load": "barra",
+      "load_label": "kg total",
+      "load_hint": "Registre o total: barra (olímpica 20 kg, W ~10 kg) + todas as anilhas.",
+      "wheel": {
+       "step": 2.5,
+       "min": 0,
+       "max": 300
+      },
+      "tips": {
+       "ok": [
+        "Olhos sob a barra; escápulas juntas e para baixo ('guarde as escápulas no bolso de trás').",
+        "Pés firmes no chão, leve arco natural na lombar, glúteo no banco.",
+        "Pegada um pouco mais larga que os ombros, punhos retos sobre os antebraços.",
+        "Desça controlando até a barra tocar a parte baixa do peito (linha dos mamilos ou logo abaixo).",
+        "Cotovelos a cerca de 45–70° do tronco (apontando levemente para baixo, nem abertos a 90°, nem colados).",
+        "Suba em leve diagonal, de volta à linha dos ombros."
+       ],
+       "erros": [
+        "Cotovelos abertos a 90° (sobrecarrega o ombro): aproxime-os do tronco.",
+        "Barra descendo no pescoço ou alto no peito.",
+        "Ombros sobem e projetam para frente no topo: mantenha as escápulas presas.",
+        "Quicar a barra no peito: toque leve e controle.",
+        "Glúteo sai do banco ao empurrar."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "kind": "straight",
+    "rest_sec": 120,
+    "items": [
+     {
+      "name": "Desenvolvimento Halteres",
+      "sets": 3,
+      "reps": [
+       8,
+       10
+      ],
+      "unit": "reps",
+      "rir": "1–2",
+      "equip": "Halteres + banco",
+      "inc": 2,
+      "main": false,
+      "grupo": "Ombro",
+      "video": {
+       "id": "7oH0algsdww",
+       "title": "Seated Neutral Grip Dumbbell Shoulder Press Exercise Demo",
+       "channel": "The Hybrid Headquarters",
+       "seconds": 20
+      },
+      "load": "halter",
+      "load_label": "kg/halter",
+      "load_hint": "Registre o peso de UM halter.",
+      "wheel": {
+       "step": 1,
+       "min": 0,
+       "max": 60
+      },
+      "tips": {
+       "ok": [
+        "Encosto a ~80–90°, lombar apoiada.",
+        "Halteres na altura das orelhas, cotovelos levemente à frente do corpo.",
+        "Empurre para cima até quase estender, halteres se aproximando sobre a cabeça."
+       ],
+       "erros": [
+        "Arquear muito a lombar: abdome firme.",
+        "Descer só até a testa (amplitude curta).",
+        "Cotovelos totalmente para trás."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "kind": "biset",
+    "rounds": 3,
+    "rest_sec": 60,
+    "items": [
+     {
+      "name": "Supino Inclinado Halteres",
+      "sets": 3,
+      "reps": [
+       10,
+       12
+      ],
+      "unit": "reps",
+      "rir": "1–2",
+      "equip": "Halteres + banco inclinado",
+      "inc": 2,
+      "main": false,
+      "grupo": "Peito",
+      "video": {
+       "id": "jMQA3XtJSgo",
+       "title": "Incline Dumbbell Bench Press - OPEX Exercise Library",
+       "channel": "OPEX Fitness",
+       "seconds": 13
+      },
+      "load": "halter",
+      "load_label": "kg/halter",
+      "load_hint": "Registre o peso de UM halter.",
+      "wheel": {
+       "step": 1,
+       "min": 0,
+       "max": 60
+      },
+      "tips": {
+       "ok": [
+        "Banco a 30–45°; leve os halteres apoiados nas coxas para subir.",
+        "Escápulas presas; halteres descem ao lado da parte alta do peito.",
+        "Cotovelos a ~45–60° do tronco, antebraços verticais.",
+        "Suba aproximando os halteres sem bater um no outro."
+       ],
+       "erros": [
+        "Descer pouco (amplitude curta).",
+        "Cotovelos abertos a 90°.",
+        "Soltar os halteres de qualquer jeito no fim: desça-os até as coxas."
+       ]
+      }
+     },
+     {
+      "name": "Crossover Polia",
+      "sets": 3,
+      "reps": [
+       12,
+       15
+      ],
+      "unit": "reps",
+      "rir": "1–2",
+      "equip": "Polia dupla",
+      "inc": 2.5,
+      "main": false,
+      "grupo": "Peito",
+      "video": {
+       "id": "hhruLxo9yZU",
+       "title": "How To Do A High to Low Cable Fly/ Cable Crossover",
+       "channel": "PureGym",
+       "seconds": 12
+      },
+      "load": "maquina",
+      "load_label": "kg",
+      "load_hint": "Registre o número da pilha/pino da máquina ou polia.",
+      "wheel": {
+       "step": 2.5,
+       "min": 0,
+       "max": 300
+      },
+      "tips": {
+       "ok": [
+        "Um passo à frente, tronco levemente inclinado, cotovelos levemente flexionados e fixos.",
+        "Traga as mãos em arco até se encontrarem à frente do quadril/peito, contraindo o peito.",
+        "Volte devagar até sentir o alongamento, sem deixar o ombro ir para frente."
+       ],
+       "erros": [
+        "Virar um supino (dobra e estica o cotovelo): ângulo do cotovelo fixo.",
+        "Ombros subindo: escápulas para baixo."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "kind": "biset",
+    "rounds": 3,
+    "rest_sec": 45,
+    "items": [
+     {
+      "name": "Elevação Lateral",
+      "sets": 3,
+      "reps": [
+       12,
+       15
+      ],
+      "unit": "reps",
+      "rir": "1–2",
+      "equip": "Halteres",
+      "inc": 1,
+      "main": false,
+      "grupo": "Ombro",
+      "video": {
+       "id": "XPPfnSEATJA",
+       "title": "How to do a Dumbbell Lateral Raise",
+       "channel": "National Academy of Sports Medicine (NASM)",
+       "seconds": 19
+      },
+      "load": "halter",
+      "load_label": "kg/halter",
+      "load_hint": "Registre o peso de UM halter.",
+      "wheel": {
+       "step": 1,
+       "min": 0,
+       "max": 60
+      },
+      "tips": {
+       "ok": [
+        "Leve inclinação do tronco à frente; cotovelos levemente flexionados.",
+        "Leve os halteres para o lado até a altura dos ombros, conduzindo com os cotovelos.",
+        "Desça em 2–3 s; carga leve e controle valem mais que peso."
+       ],
+       "erros": [
+        "Balançar o corpo para subir: carga alta demais.",
+        "Subir encolhendo o trapézio: pense em afastar as mãos, não em subir.",
+        "Passar muito da linha do ombro."
+       ]
+      }
+     },
+     {
+      "name": "Tríceps Corda",
+      "sets": 3,
+      "reps": [
+       12,
+       15
+      ],
+      "unit": "reps",
+      "rir": "1–2",
+      "equip": "Polia alta + corda",
+      "inc": 2.5,
+      "main": false,
+      "grupo": "Tríceps",
+      "video": {
+       "id": "-xa-6cQaZKY",
+       "title": "Rope Pushdown",
+       "channel": "Renaissance Periodization",
+       "seconds": 12
+      },
+      "load": "maquina",
+      "load_label": "kg",
+      "load_hint": "Registre o número da pilha/pino da máquina ou polia.",
+      "wheel": {
+       "step": 2.5,
+       "min": 0,
+       "max": 300
+      },
+      "tips": {
+       "ok": [
+        "Cotovelos colados ao tronco e parados.",
+        "Estenda até o fim abrindo a corda para os lados; segure 1 s.",
+        "Volte até o antebraço passar a horizontal, sem subir os cotovelos."
+       ],
+       "erros": [
+        "Cotovelos se movendo (vira remada/ombro).",
+        "Inclinar o tronco por cima da corda."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "kind": "triset",
+    "rounds": 3,
+    "rest_sec": 30,
+    "items": [
+     {
+      "name": "Paralelas",
+      "sets": 3,
+      "reps": [
+       8,
+       12
+      ],
+      "unit": "reps",
+      "rir": "0–1",
+      "equip": "Paralelas",
+      "inc": 0,
+      "main": false,
+      "grupo": "Peito",
+      "video": {
+       "id": "cz6IAayKzNA",
+       "title": "How to Target Your Chest While doing Dips",
+       "channel": "Alex Eubank Clips",
+       "seconds": 25
+      },
+      "load": "corpo",
+      "load_label": "+kg extra",
+      "load_hint": "Só peso do corpo = 0. Com cinto/colete/halter, registre só o extra.",
+      "wheel": {
+       "step": 2.5,
+       "min": 0,
+       "max": 60
+      },
+      "tips": {
+       "ok": [
+        "Para peito: tronco inclinado à frente, cotovelos levemente abertos.",
+        "Desça até o ombro ficar na altura do cotovelo (cerca de 90°).",
+        "Suba estendendo os braços sem travar; ombros longe das orelhas."
+       ],
+       "erros": [
+        "Descer demais com o ombro rolando para frente.",
+        "Encolher os ombros.",
+        "Se não sair 6 reps, use o graviton ou faça só a descida lenta (3–4 s)."
+       ]
+      }
+     },
+     {
+      "name": "Face Pull",
+      "sets": 3,
+      "reps": [
+       15,
+       20
+      ],
+      "unit": "reps",
+      "rir": "0–1",
+      "equip": "Polia + corda",
+      "inc": 2.5,
+      "main": false,
+      "grupo": "Ombro posterior",
+      "video": {
+       "id": "w-RctWbFNGc",
+       "title": "How To Do Face Pull | Exercise Demo",
+       "channel": "OriGym",
+       "seconds": 13
+      },
+      "load": "maquina",
+      "load_label": "kg",
+      "load_hint": "Registre o número da pilha/pino da máquina ou polia.",
+      "wheel": {
+       "step": 2.5,
+       "min": 0,
+       "max": 300
+      },
+      "tips": {
+       "ok": [
+        "Polia na altura dos olhos, corda com pegada neutra.",
+        "Puxe em direção ao rosto separando as mãos, cotovelos altos.",
+        "No fim, gire os ombros para fora (mãos ao lado das orelhas, como 'duplo bíceps'); segure 1 s."
+       ],
+       "erros": [
+        "Cotovelos baixos (vira remada).",
+        "Jogar o tronco para trás: carga menor."
+       ]
+      }
+     },
+     {
+      "name": "Elevação de Pernas na Barra",
+      "sets": 3,
+      "reps": [
+       10,
+       15
+      ],
+      "unit": "reps",
+      "rir": "0–1",
+      "equip": "Barra fixa",
+      "inc": 0,
+      "main": false,
+      "grupo": "Core",
+      "video": {
+       "id": "l7OroezzX9k",
+       "title": "Hanging Knee Raise Tutorial - Proper Form and Technique",
+       "channel": "Runna",
+       "seconds": 23
+      },
+      "load": "corpo",
+      "load_label": "+kg extra",
+      "load_hint": "Só peso do corpo = 0. Com cinto/colete/halter, registre só o extra.",
+      "wheel": {
+       "step": 2.5,
+       "min": 0,
+       "max": 60
+      },
+      "tips": {
+       "ok": [
+        "Pendurado, ombros ativos; eleve os joelhos em direção ao peito enrolando o quadril.",
+        "Desça controlando, sem balançar."
+       ],
+       "erros": [
+        "Usar balanço.",
+        "Só subir as coxas sem enrolar a pelve (trabalha mais o flexor do quadril)."
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "warmup": "5 min de remo em zona 1 + 2 séries leves (50% e 75%) do primeiro exercício."
+ },
+ {
+  "seq": 3,
+  "planned": "2026-11-12",
+  "cycle": 1,
+  "week": 1,
+  "cycle_week": 1,
+  "phase": "calibracao",
+  "kind": "cardio",
+  "id": "S003",
+  "title": "Aeróbico contínuo",
+  "focus": "Zona 2 · remo + escada",
+  "cardio": {
+   "kind": "continuous",
+   "segments": [
+    {
+     "machine": "Remo Ergômetro",
+     "video": {
+      "id": "H5HEvpjpOZk",
+      "title": "Row Erg Demo",
+      "channel": "Connect Fit",
+      "seconds": 16
+     },
+     "equip": "Remo (Concept2)",
+     "min": 5,
+     "zone": "z1",
+     "bpm": [
+      88,
+      105
+     ],
+     "label": "Aquecimento"
+    },
+    {
+     "machine": "Remo Ergômetro",
+     "video": {
+      "id": "H5HEvpjpOZk",
+      "title": "Row Erg Demo",
+      "channel": "Connect Fit",
+      "seconds": 16
+     },
+     "equip": "Remo (Concept2)",
+     "min": 15,
+     "zone": "z2",
+     "bpm": [
+      106,
+      123
+     ],
+     "label": "Contínuo"
+    },
+    {
+     "machine": "Escada (Stair Climber)",
+     "video": {
+      "id": "82VNuCKw5EA",
+      "title": "Stair Climber: How to Use the Stair Stepper With Proper Form",
+      "channel": "Callari Strength & Performance",
+      "seconds": 15
+     },
+     "equip": "Simulador de escada (stair climber)",
+     "min": 15,
+     "zone": "z2",
+     "bpm": [
+      106,
+      123
+     ],
+     "label": "Contínuo"
+    },
+    {
+     "machine": "Remo Ergômetro",
+     "video": {
+      "id": "H5HEvpjpOZk",
+      "title": "Row Erg Demo",
+      "channel": "Connect Fit",
+      "seconds": 16
+     },
+     "equip": "Remo (Concept2)",
+     "min": 3,
+     "zone": "z1",
+     "bpm": [
+      88,
+      105
+     ],
+     "label": "Volta à calma"
+    }
+   ]
+  }
+ }
+]

@@ -245,6 +245,14 @@ function blockTitle(b, bi, s) {
 }
 function strengthHtml(s, log) {
   let html = `<div class="callout"><strong>Aquecimento</strong> ${esc(s.warmup)}</div>`;
+  if (s.drills && s.drills.length) {
+    html += `<details class="drills card"><summary><strong>Postura · 6 min</strong> <span class="muted small">antes de começar</span></summary>
+      ${s.drills.map(d => `<div class="drill" data-has-player>
+        <div class="drill-row"><div><div class="ex-name">${esc(d.name)}</div><div class="ex-sets">${esc(d.presc)} · ${esc(d.equip)}</div></div>
+        <div class="ex-actions">${videoBtn(d.video, '▶ Vídeo')}</div></div>
+        <div class="ex-player" hidden></div></div>`).join('')}
+    </details>`;
+  }
   if (s.phase === 'calibracao') html += `<div class="callout gold"><strong>Semana de calibração.</strong> Em cada exercício, ache a carga em que você chega ao topo da faixa sobrando 2 repetições (RIR 2). Registre carga e reps: é daqui que a progressão parte.</div>`;
   if (s.phase === 'leve') html += `<div class="callout"><strong>Semana leve.</strong> Menos séries, −10% de carga, longe da falha. É a semana que deixa o corpo absorver o ciclo.</div>`;
   s.blocks.forEach((b, bi) => {
@@ -256,13 +264,15 @@ function strengthHtml(s, log) {
       const last = sug.last;
       const lastTxt = last ? `Última (${fmtDate(last.date, { day: '2-digit', month: 'short' })}): ${last.sets.map(x => `${fmtNum(x.kg)}×${x.reps}`).join(' · ')}` : '';
       const target = it.unit === 's' ? `${it.sets} × ${it.reps[0]}–${it.reps[1]} s` : `${it.sets} × ${it.reps[0]}–${it.reps[1]} reps`;
+      const uniTxt = it.uni ? '<div class="ex-uni">Um lado de cada vez: <b>esquerdo primeiro</b>. O direito faz no máximo as mesmas reps. Registre as do esquerdo.</div>' : '';
       const tips = it.tips ? `<button type="button" class="ex-video ex-tips-btn">💡 Dicas de execução</button>` : '';
       html += `<div class="ex-card" data-has-player data-key="${key}">
         <div class="ex-head">
           <div>
             <div class="ex-name">${esc(it.name)}${it.main ? ' <span class="tag mini">principal</span>' : ''}</div>
-            <div class="ex-sets">${target} · RIR ${esc(it.rir)} · ${esc(it.equip)}</div>
+            <div class="ex-sets">${target}${it.uni ? ' por lado' : ''} · RIR ${esc(it.rir)} · ${esc(it.equip)}</div>
             ${it.load_hint ? `<div class="ex-hint">${esc(it.load_hint)}</div>` : ''}
+            ${uniTxt}
           </div>
         </div>
         <div class="ex-actions">${videoBtn(it.video)}${tips}</div>

@@ -161,7 +161,8 @@ function exHistory(logs, program, name) {
   return h.sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : a.sid < b.sid ? -1 : 1);
 }
 function roundTo(x, inc) { if (!inc) return x; return Math.round(x / inc) * inc; }
-function workKg(entry) { // carga de trabalho = a mais usada (desempate: maior)
+function workKg(entry) { // carga de trabalho = a mais usada (desempate: maior); na calibração (rampa), a maior
+  if (entry.phase === 'calibracao') return Math.max(...entry.sets.map(x => Number(x.kg) || 0));
   const c = {};
   entry.sets.forEach(s => { const k = Number(s.kg) || 0; c[k] = (c[k] || 0) + 1; });
   return Number(Object.entries(c).sort((a, b) => b[1] - a[1] || b[0] - a[0])[0][0]);
