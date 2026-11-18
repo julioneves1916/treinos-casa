@@ -73,11 +73,11 @@ def pernas(c):
     a1 = ["Agachamento Livre", "Agachamento Livre", "Agachamento Hack"][c]
     a2 = ["Stiff Barra", "Stiff Barra", "Levantamento Terra"][c]
     b1 = [("Agachamento Búlgaro", "Mesa Flexora"), ("Afundo Halteres", "Mesa Flexora"), ("Agachamento Búlgaro", "Cadeira Flexora")][c]
-    return "Pernas + abdome", "Quadríceps, posterior, glúteo, core", [
+    return "Pernas + abdome", "Quadríceps, posterior, glúteo, core (único dia de inferiores)", [
         A(ex(a1, 4, [6, 8], "1–3"), 150),
         A(ex(a2, 3, [6, 8] if a2 != "Levantamento Terra" else [5, 7], "2–3"), 120),
         B(ex(b1[0], 3, [10, 12], "1–2", uni=True), ex(b1[1], 3, [10, 12], "1–2"), 60),
-        B(ex("Cadeira Extensora", 3, [12, 15], "1–2"), ex("Panturrilha em Pé", 3, [12, 15], "1–2"), 45),
+        B(ex("Hip Thrust", 3, [8, 10], "1–2"), ex("Cadeira Extensora", 3, [12, 15], "1–2"), 45),
         C(ex("Prancha", 3, [30, 45], "0–1", "s"), ex("Abdominal na Polia", 3, [12, 15], "0–1"),
           ex("Elevação de Pernas na Barra", 3, [10, 15], "0–1"), 30),
     ]
@@ -95,13 +95,14 @@ def peito_ombro(c):
 
 def tronco_uni(c):
     rosca = ["Rosca Martelo", "Rosca Alternada", "Rosca Martelo"][c]
-    return "Tronco unilateral + pernas", "Simetria dos ombros (esquerdo primeiro), glúteo, core", [
+    lat = ["Elevação Lateral Polia", "Elevação Lateral", "Elevação Lateral Polia"][c]
+    return "Ombros, braços e simetria", "Unilaterais (esquerdo primeiro), deltoides, braços, core", [
         A(ex("Puxada Unilateral", 3, [8, 10], "1–2", uni=True), 90),
         A(ex("Remada Unilateral", 3, [8, 10], "1–2", uni=True), 90),
         B(ex("Landmine Press Unilateral", 3, [8, 10], "1–2", uni=True), ex("Elevação em Y", 3, [10, 12], "1–2"), 60),
-        B(ex("Hip Thrust", 3, [8, 10], "1–2"), ex("Goblet Squat", 3, [10, 12], "1–2"), 60),
+        B(ex(lat, 3, [12, 15], "1–2", uni=lat == "Elevação Lateral Polia"), ex(rosca, 3, [10, 12], "1–2"), 45),
         C(ex("Caminhada com Carga Unilateral", 3, [30, 40], "0–1", "s", uni=True), ex("Prancha Lateral", 3, [30, 40], "0–1", "s"),
-          ex(rosca, 3, [10, 12], "0–1"), 30),
+          ex("Tríceps Francês Halter", 3, [10, 12], "0–1"), 30),
     ]
 
 def deload(blocks):
@@ -142,10 +143,10 @@ sessions = list(FEITAS)
 seq = len(sessions)
 WARM = "6 min de postura (abaixo) + 5 min de remo em zona 1 + 2 séries leves (50% e 75%) do primeiro exercício."
 
-def add(date, w, kind, fn, cyc, wk, phase):
+def add(w, kind, fn, cyc, wk, phase):
     global seq
     seq += 1
-    s = {"seq": seq, "planned": date.isoformat(), "cycle": cyc + 1, "week": w + 1, "cycle_week": wk, "phase": phase, "kind": kind}
+    s = {"seq": seq, "cycle": cyc + 1, "week": w + 1, "cycle_week": wk, "phase": phase, "kind": kind}
     if kind == "strength":
         title, focus, blocks = fn(cyc)
         if phase == "leve": blocks = deload(blocks)
@@ -156,18 +157,15 @@ def add(date, w, kind, fn, cyc, wk, phase):
         s.update(id=f"S{seq:03d}", title=title, focus=focus, cardio=plan_c)
     sessions.append(s)
 
-# semana 1: restam sáb 14 (pernas + abdome) e dom 15 (intervalado)
-add(START + dt.timedelta(days=4), 0, "strength", pernas, 0, 1, "calibracao")
-add(START + dt.timedelta(days=5), 0, "cardio", cardio_int, 0, 1, "calibracao")
+# v3 (17/11/2026): sem datas — sequência de rodadas; 3 superiores + 1 inferior por rodada
+RODADA = [("strength", costas), ("strength", peito_ombro), ("cardio", cardio_z2),
+          ("strength", pernas), ("strength", tronco_uni), ("cardio", cardio_int)]
 for w in range(1, 15):
     cyc, wk = w // 5, w % 5 + 1
     phase = "leve" if wk == 5 else "progressao"
-    tue = START + dt.timedelta(days=7 * w)
-    plan = [("strength", costas), ("strength", pernas), ("cardio", cardio_z2), ("strength", peito_ombro), ("strength", tronco_uni), ("cardio", cardio_int)]
-    for d, (kind, fn) in enumerate(plan):
-        add(tue + dt.timedelta(days=d), w, kind, fn, cyc, wk, phase)
-
+    for kind, fn in RODADA:
+        add(w, kind, fn, cyc, wk, phase)
 OUT.parent.mkdir(parents=True, exist_ok=True)
-OUT.write_text(json.dumps({"version": dt.date.today().isoformat(), "start": START.isoformat(), "rest_weekday": 1,
+OUT.write_text(json.dumps({"version": dt.date.today().isoformat(), "start": START.isoformat(), "mode": "sequencia",
     "fcmax": FCMAX, "zones": Z, "sessions": sessions}, ensure_ascii=False, indent=1))
-print(len(sessions), "sessões ->", OUT, sessions[-1]["planned"])
+print(len(sessions), "sessões ->", OUT)

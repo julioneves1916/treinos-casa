@@ -1,7 +1,6 @@
 [
  {
   "seq": 1,
-  "planned": "2026-11-10",
   "cycle": 1,
   "week": 1,
   "cycle_week": 1,
@@ -409,7 +408,6 @@
  },
  {
   "seq": 2,
-  "planned": "2026-11-11",
   "cycle": 1,
   "week": 1,
   "cycle_week": 1,
@@ -818,7 +816,6 @@
  },
  {
   "seq": 3,
-  "planned": "2026-11-12",
   "cycle": 1,
   "week": 1,
   "cycle_week": 1,

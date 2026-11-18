@@ -105,26 +105,16 @@ const Sync = {
   },
 };
 
-// ---------- agenda: ordem fixa, datas que se reajustam
-// Sessões feitas/puladas ficam na data em que aconteceram. As pendentes são encaixadas
-// a partir de hoje (nunca antes da data planejada), pulando o dia de descanso.
-function computeSchedule(program, logs, today = todayISO()) {
-  const rest = program.rest_weekday; // 1 = segunda
+// ---------- agenda: só a sequência, sem datas
+// Feitas/puladas mostram a data em que aconteceram; a primeira pendente é a "próxima"; o resto aguarda na ordem.
+function computeSchedule(program, logs) {
   const out = [];
-  const doneToday = Object.values(logs).some(l => l && l.status === 'done' && l.date === today);
-  let cursor = doneToday ? addDays(today, 1) : today;
-  const nextFree = (d) => { while (weekday(d) === rest) d = addDays(d, 1); return d; };
+  let nextFound = false;
   for (const s of program.sessions) {
     const log = logs[s.id];
-    if (log && (log.status === 'done' || log.status === 'skipped')) {
-      out.push({ s, date: log.date || s.planned, status: log.status, shift: 0 });
-      continue;
-    }
-    let d = s.planned > cursor ? s.planned : cursor;
-    d = nextFree(d);
-    const shift = Math.round((parseISO(d) - parseISO(s.planned)) / DAY);
-    out.push({ s, date: d, status: d === today ? 'hoje' : (d < today ? 'atrasado' : 'pendente'), shift, inProgress: !!(log && log.sets && Object.keys(log.sets).length) });
-    cursor = addDays(d, 1);
+    if (log && (log.status === 'done' || log.status === 'skipped')) { out.push({ s, date: log.date || null, status: log.status }); continue; }
+    out.push({ s, date: null, status: nextFound ? 'pendente' : 'proxima', inProgress: !!(log && log.sets && Object.keys(log.sets).length) });
+    nextFound = true;
   }
   return out;
 }

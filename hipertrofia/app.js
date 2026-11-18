@@ -88,22 +88,19 @@ const toNum = (s) => { const n = Number(String(s).replace(',', '.')); return isF
 // ======================================================================
 function renderAgenda() {
   const root = $('#view-agenda');
-  const today = todayISO();
-  const sched = computeSchedule(App.program, App.st.logs, today);
-  const next = sched.find(x => x.status === 'hoje' || x.status === 'atrasado' || x.status === 'pendente');
+  const sched = computeSchedule(App.program, App.st.logs);
+  const next = sched.find(x => x.status === 'proxima');
   const done = sched.filter(x => x.status === 'done').length;
 
   let html = '';
   if (next) {
-    const isToday = next.date === today;
     html += `<div class="next-card" data-open="${next.s.id}">
-      <p class="eyebrow">${isToday ? 'Hoje' : 'Próximo treino'} · ${fmtDate(next.date)}</p>
+      <p class="eyebrow">Próximo treino · rodada ${next.s.week}</p>
       <h2>${esc(next.s.title)}</h2>
       <p class="muted">${esc(next.s.focus)}</p>
       <div class="chips-inline">
         <span class="tag">${PHASE[next.s.phase]}</span>
-        <span class="tag">Ciclo ${next.s.cycle} · semana ${next.s.cycle_week}/5</span>
-        ${next.shift > 0 ? `<span class="tag warn">adiado ${next.shift} d</span>` : ''}
+        <span class="tag">Ciclo ${next.s.cycle} · rodada ${next.s.cycle_week}/5</span>
         ${next.inProgress ? '<span class="tag ok">em andamento</span>' : ''}
       </div>
       <button class="primary-btn" data-open="${next.s.id}">${next.inProgress ? 'Continuar' : 'Abrir treino'}</button>
@@ -111,40 +108,35 @@ function renderAgenda() {
   } else {
     html += `<div class="next-card"><h2>Programa concluído</h2><p class="muted">${done} sessões feitas. Hora de gerar o próximo bloco.</p></div>`;
   }
-  html += `<div class="agenda-meta muted">${done} de ${sched.length} sessões feitas · início ${fmtDate(App.program.start, { day: '2-digit', month: 'short' })}</div>`;
+  html += `<div class="agenda-meta muted">${done} de ${sched.length} sessões feitas · sem datas: faça na ordem, no seu ritmo</div>`;
 
-  // agrupa por semana (ter→dom) a partir da data efetiva
-  const weeks = new Map();
-  for (const x of sched) {
-    const d = parseISO(x.date); const wd = d.getDay();
-    const tue = addDays(x.date, -((wd + 5) % 7)); // terça da semana
-    if (!weeks.has(tue)) weeks.set(tue, []);
-    weeks.get(tue).push(x);
-  }
-  const thisTue = addDays(today, -((parseISO(today).getDay() + 5) % 7));
+  // agrupa por rodada (6 sessões: 3 superiores, 1 inferior, 2 aeróbicos)
+  const rounds = new Map();
+  for (const x of sched) { if (!rounds.has(x.s.week)) rounds.set(x.s.week, []); rounds.get(x.s.week).push(x); }
   let hidden = 0;
-  for (const [tue, items] of weeks) {
-    const mon = addDays(tue, 6);
-    if (!App.showPast && mon < thisTue && items.every(x => x.status === 'done' || x.status === 'skipped')) { hidden++; continue; }
+  for (const [w, items] of rounds) {
+    const finished = items.every(x => x.status === 'done' || x.status === 'skipped');
+    if (!App.showPast && finished) { hidden++; continue; }
     const s0 = items[0].s;
-    html += `<h3 class="section-heading">Semana de ${fmtDate(tue, { day: '2-digit', month: 'short' })} · ${PHASE[s0.phase]}</h3><ul class="workout-list">`;
-    for (const x of items) {
-      const st = { done: '✓', skipped: '—', hoje: '●', atrasado: '!', pendente: '' }[x.status];
+    html += `<h3 class="section-heading">Rodada ${w} · ${PHASE[s0.phase]}</h3><ul class="workout-list">`;
+    items.forEach((x, k) => {
+      const st = { done: '✓', skipped: '—', proxima: '●', pendente: '' }[x.status];
+      const sub = x.status === 'done' ? `feito em ${fmtDate(x.date, { day: '2-digit', month: 'short' })}` : x.status === 'skipped' ? 'pulado' : esc(x.s.focus);
       html += `<li class="workout-card ${x.status}" data-open="${x.s.id}">
         <div class="wc-row1">
-          <span class="wc-id">${WD[weekday(x.date)]}<small>${parseISO(x.date).getDate()}</small></span>
+          <span class="wc-id">${k + 1}</span>
           <div class="wc-main">
             <span class="wc-title">${esc(x.s.title)}</span>
-            <span class="wc-foco">${esc(x.s.focus)}${x.shift > 0 && x.status !== 'done' ? ` · adiado ${x.shift} d` : ''}</span>
+            <span class="wc-foco">${sub}</span>
           </div>
         </div>
         <span class="wc-status">${st}</span>
       </li>`;
-    }
-    html += `<li class="rest-day">seg ${parseISO(mon).getDate()} · descanso</li></ul>`;
+    });
+    html += `</ul>`;
   }
-  if (hidden) html += `<button class="ghost-btn" id="toggle-past">Mostrar ${hidden} semana(s) anteriores</button>`;
-  else if (App.showPast) html += `<button class="ghost-btn" id="toggle-past">Esconder semanas anteriores</button>`;
+  if (hidden) html += `<button class="ghost-btn" id="toggle-past">Mostrar ${hidden} rodada(s) concluída(s)</button>`;
+  else if (App.showPast) html += `<button class="ghost-btn" id="toggle-past">Esconder rodadas concluídas</button>`;
   root.innerHTML = html;
   $$('[data-open]', root).forEach(el => el.addEventListener('click', (e) => { e.stopPropagation(); openSession(el.dataset.open); }));
   const tp = $('#toggle-past'); if (tp) tp.addEventListener('click', () => { App.showPast = !App.showPast; renderAgenda(); });
@@ -183,7 +175,7 @@ function renderSession(id) {
   const z = Z();
   let html = `<button class="back-btn" id="back">← Agenda</button>
     <header class="detail-header">
-      <p class="eyebrow">${fmtDate(sched.date)} · ${PHASE[s.phase]} · ciclo ${s.cycle}, semana ${s.cycle_week}/5</p>
+      <p class="eyebrow">Rodada ${s.week} · ${PHASE[s.phase]} · ciclo ${s.cycle}</p>
       <h2>${esc(s.title)}</h2>
       <p class="detail-estrutura">${esc(s.focus)}</p>
       ${log && log.status === 'done' ? `<p class="tag ok">Feito em ${fmtDate(log.date)}</p>` : ''}
@@ -616,7 +608,7 @@ function bindPolar(root, s) {
       const r = await Api.send('polar-sync', {});
       (r.exercises || []).forEach(x => { App.st.polar[x.id] = Object.assign({}, x, { updatedAt: Date.now() }); });
       commit();
-      const date = (computeSchedule(App.program, App.st.logs).find(x => x.s.id === s.id) || {}).date;
+      const date = (App.st.logs[s.id] && App.st.logs[s.id].date) || todayISO();
       const cands = Object.values(App.st.polar).filter(x => (x.start_time || '').slice(0, 10) === date || (x.start_time || '').slice(0, 10) === todayISO());
       const box = $('#polar-pick');
       if (!cands.length) { box.innerHTML = '<p class="muted small">Nenhum treino da Polar nesta data. Sincronize o relógio com o app Polar Flow e tente de novo.</p>'; return; }
@@ -667,15 +659,15 @@ function renderProgress() {
   // resumo semanal
   const byWeek = new Map();
   for (const x of sched) {
-    const w = x.s.week; if (!byWeek.has(w)) byWeek.set(w, { plan: 0, done: 0, sec: 0, kcal: 0, phase: x.s.phase, first: x.date });
-    const W = byWeek.get(w); W.plan++;
+    const w = x.s.week; if (!byWeek.has(w)) byWeek.set(w, { plan: 0, done: 0, sec: 0, kcal: 0, phase: x.s.phase, current: false });
+    const W = byWeek.get(w); W.plan++; if (x.status === 'proxima') W.current = true;
     const l = logs[x.s.id];
     if (l && l.status === 'done') { W.done++; W.sec += l.polar?.duration_s || 0; W.kcal += l.polar?.kcal || 0; }
   }
-  let html = `<h2>Progresso</h2><h3 class="section-heading">Semanas</h3><div class="table-wrap"><table class="tbl"><thead><tr><th>Sem.</th><th>Fase</th><th>Feitas</th><th>Tempo</th><th>kcal</th></tr></thead><tbody>`;
+  let html = `<h2>Progresso</h2><h3 class="section-heading">Rodadas</h3><div class="table-wrap"><table class="tbl"><thead><tr><th>Rodada</th><th>Fase</th><th>Feitas</th><th>Tempo</th><th>kcal</th></tr></thead><tbody>`;
   let tSec = 0, tK = 0;
   for (const [w, W] of byWeek) {
-    if (!W.done && W.first > todayISO()) continue;
+    if (!W.done && !W.current) continue;
     tSec += W.sec; tK += W.kcal;
     html += `<tr><td>${w}</td><td>${PHASE[W.phase]}</td><td>${W.done}/${W.plan}</td><td>${W.sec ? Math.round(W.sec / 60) + ' min' : '—'}</td><td>${W.kcal || '—'}</td></tr>`;
   }
@@ -695,7 +687,7 @@ function renderProgress() {
     const curve = expectedCurve(h, it);
     const lastE = curve[curve.length - 1];
     const line = `<div class="prog-row"><div><strong>${esc(name)}</strong><div class="muted small">${h.length} sessões · atual ${fmtNum(lastE.real)} kg · esperado ${fmtNum(lastE.exp)} kg</div></div>
-      <div class="prog-next">${sg && sg.kg != null ? `${fmtNum(sg.kg)} kg` : '—'}<small>${nx ? fmtDate(nx.date, { day: '2-digit', month: 'short' }) : ''}</small></div></div>`;
+      <div class="prog-next">${sg && sg.kg != null ? `${fmtNum(sg.kg)} kg` : '—'}<small>${nx ? 'rodada ' + nx.s.week : ''}</small></div></div>`;
     // projeção: as próximas 4 ocorrências do exercício no programa
     const proj = [];
     let e = lastE.exp;
@@ -703,9 +695,9 @@ function renderProgress() {
       if (proj.length >= 4) break;
       if (!(x.s.blocks || []).some(b => b.items.some(i2 => i2.name === name))) continue;
       e = x.s.phase === 'leve' ? e : e * 1.025;
-      proj.push({ date: x.date, real: null, exp: x.s.phase === 'leve' ? roundTo(e * 0.9, it.inc) : roundTo(e, it.inc) });
+      proj.push({ date: null, w: x.s.week, real: null, exp: x.s.phase === 'leve' ? roundTo(e * 0.9, it.inc) : roundTo(e, it.inc) });
     }
-    const projTxt = proj.length ? `<p class="muted small">Esperado nas próximas: ${proj.map(p => `${fmtDate(p.date, { day: '2-digit', month: 'short' })} ${fmtNum(p.exp)} kg`).join(' · ')}</p>` : '';
+    const projTxt = proj.length ? `<p class="muted small">Esperado nas próximas: ${proj.map(p => `R${p.w} ${fmtNum(p.exp)} kg`).join(' · ')}</p>` : '';
     if (it.main) mains += `<div class="card">${line}${svgChart(curve.concat(proj))}<p class="legend"><span class="lg-real"></span> real <span class="lg-exp"></span> esperado (+2,5% por sessão de progressão)</p>${projTxt}</div>`;
     else others += `<div class="card slim">${line}</div>`;
   }
@@ -717,7 +709,7 @@ function renderProgress() {
   if (cur) {
     const vol = {};
     App.program.sessions.filter(s => s.week === cur.s.week && s.blocks).forEach(s => s.blocks.forEach(b => b.items.forEach(it => { vol[it.grupo] = (vol[it.grupo] || 0) + it.sets; })));
-    html += `<h3 class="section-heading">Séries por grupamento · semana ${cur.s.week}</h3><div class="vol">${Object.entries(vol).sort((a, b) => b[1] - a[1]).map(([g, n]) => `<div class="vol-row"><span>${esc(g)}</span><span class="bar" style="--w:${Math.min(100, n * 5)}%"></span><b>${n}</b></div>`).join('')}</div>
+    html += `<h3 class="section-heading">Séries por grupamento · rodada ${cur.s.week}</h3><div class="vol">${Object.entries(vol).sort((a, b) => b[1] - a[1]).map(([g, n]) => `<div class="vol-row"><span>${esc(g)}</span><span class="bar" style="--w:${Math.min(100, n * 5)}%"></span><b>${n}</b></div>`).join('')}</div>
       <p class="muted small">Referência para hipertrofia: 10–20 séries semanais por grupamento grande.</p>`;
   }
   root.innerHTML = html;
@@ -851,7 +843,7 @@ function renderSettings() {
   <div class="card"><div class="btn-row">
     <button class="secondary-btn small" id="bk-exp">Exportar JSON</button>
     <label class="secondary-btn small file-btn">Importar JSON<input type="file" id="bk-imp" accept="application/json" hidden></label>
-  </div><p class="muted small">Programa: ${App.program.sessions.length} sessões, de ${fmtDate(App.program.start)} a ${fmtDate(App.program.sessions[App.program.sessions.length - 1].planned)}.</p></div>`;
+  </div><p class="muted small">Programa: ${App.program.sessions.length} sessões em ${App.program.sessions[App.program.sessions.length - 1].week} rodadas, sem datas.</p></div>`;
 
   $('#s-save').addEventListener('click', () => {
     const S2 = settings(); S2.fcmax = toNum($('#s-max').value) || null; S2.fcrest = toNum($('#s-rest').value) || null; touch(S2); commit(); renderSettings(); toast('Zonas atualizadas.');
